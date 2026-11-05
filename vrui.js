@@ -140,7 +140,7 @@ export function buildScreens(s) {
   rw.push(t(24, 598, 976, 20, 'Ask for a new option (own scripts on the PC; Rhino when its worker is connected)', C.mute));
   [['turn 90', 'Turn 90°'], ['raise 10', 'Raise 10%'], ['raise 20', 'Raise 20%'], ['reset', 'Original']].forEach(([c, l], i) => rw.push(btn('cmd:' + c, l, 24 + i * 245, 622, 232, 48, false, !s.ack || !s.bridgeOn || (s.gen && s.gen.state === 'running'))));
   rw.push(t(24, 678, 976, 20, !s.bridgeOn ? 'Needs the bridge on the PC' : (s.gen && s.gen.text) || 'Not asked yet', s.gen && s.gen.state === 'error' ? C.warn : C.mute));
-  rw.push(btn('rack', s.rackOn ? 'Hide timber stock rack' : 'Show timber stock rack', 24, 706, 360, 48, !!s.rackOn, !s.ack),t(398,712,310,15,String(s.engineStatus||'Geometry only; no structural check').slice(0,60),C.mute),btn('engine','Test Rhino link',730,706,270,48,false,!s.ack||!s.bridgeOn));
+  rw.push(btn('rack', s.rackOn ? 'Hide timber stock rack' : 'Show timber stock rack', 24, 706, 360, 48, !!s.rackOn, !s.ack),btn('stock:band',`Length: ${s.stockBandLabel||'All'}`,398,706,320,48,false,!s.rackOn),btn('engine','Test Rhino link',730,706,270,48,false,!s.ack||!s.bridgeOn));
   rw.push(t(24, 166, 976, 22, s.story.nodes.length ? `Decision map · tap a card to return to it and branch${s.story.earlier ? ` · ${s.story.earlier} earlier not shown` : ''}` : 'Decision map · nothing recorded yet', C.mute));
   const CW = 150, CH = 150, laneY = l => 222 + l * 172, n = s.story.nodes.length, stepX = n > 1 ? Math.min(CW + 22, (976 - CW) / (n - 1)) : 0, at = new Map();
   s.story.nodes.forEach(nd => at.set(nd.id, { x: 24 + nd.col * stepX, y: laneY(nd.lane) }));
