@@ -104,6 +104,6 @@ export function memberNote(f,perMember,ids){
   const size=a&&b&&(a.width!==b.width||a.height!==b.height)?`${mm(b)} → ${mm(a)}`:a?`${mm(a)}, ${a.length.toFixed(2)} m`:'not in this option';
   const list=perMember?.[id]||[],joints=list.length?`${list.length} joints touch it (with ${[...new Set(list.map(j=>j.with))].join(', ')}); re-notching them is not computed.`:'No joints recorded.';
   const tiles=f.shade.tiles.filter(t=>Math.abs(t.delta)>.001);
-  let cell='No ground cell changes.';if(tiles.length){const t=tiles.reduce((p,q)=>Math.abs(q.delta)>Math.abs(p.delta)?q:p);cell=`${tiles.length} ground cells change; the largest goes from ${Math.round(t.b*100)}% to ${Math.round(t.a*100)}% of the hours in shade.`;}
+  let cell='No ground cell changes.';if(!f.changes.changed.includes(id))cell='This member is the same in both options; click it again to go back.';else if(tiles.length){const t=tiles.reduce((p,q)=>Math.abs(q.delta)>Math.abs(p.delta)?q:p);cell=`${tiles.length} ground cells change; the largest goes from ${Math.round(t.b*100)}% to ${Math.round(t.a*100)}% of the hours in shade.`;}
   return `Member ${id}: ${size}. ${joints} ${cell}`;
 }
