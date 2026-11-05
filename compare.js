@@ -86,7 +86,7 @@ export function differenceNote(f) {
   const ch = f.changes, total = ch.same.length + ch.changed.length, rigid = ch.changed.length && !ch.resized.length && !ch.added.length && !ch.removed.length;
   const members = !ch.changed.length ? 'No member changes.'
     : rigid ? `Every member moved as one frame; ${ch.resized.length} changed size.`
-    : `${ch.changed.length} of ${total} members changed: ${ch.moved.length} moved, ${ch.resized.length} resized, ${ch.added.length} added, ${ch.removed.length} removed; ${ch.same.length} unchanged, drawn faint.`;
+    : `${ch.changed.length} of ${total} members changed (1 mm tolerance); ${ch.same.length} unchanged, drawn faint.`;
   const ground = f.shade.a === null ? 'No light data for this date / time.' : `${f.tileScope?`In ${f.tileScope}`:'On the whole ground'}: ${f.shade.gain} cells gain shade (teal), ${f.shade.loss} lose it (amber); unchanged cells are hidden.`;
   return `${members} ${ground}`;
 }
@@ -106,4 +106,19 @@ export function memberNote(f,perMember,ids){
   const tiles=f.shade.tiles.filter(t=>Math.abs(t.delta)>.001);
   let cell='No ground cell changes.';if(!f.changes.changed.includes(id))cell='This member is the same in both options; click it again to go back.';else if(tiles.length){const t=tiles.reduce((p,q)=>Math.abs(q.delta)>Math.abs(p.delta)?q:p);cell=`${tiles.length} ground cells change; the largest goes from ${Math.round(t.b*100)}% to ${Math.round(t.a*100)}% of the hours in shade.`;}
   return `Member ${id}: ${size}. ${joints} ${cell}`;
+}
+// The comparison as a table for a saved figure. Each shade row names its scope, so two correct numbers are not read as a contradiction.
+export function comparisonRows(f,seat,tier='whole'){
+  const pc=v=>v===null||v===undefined?'no data':`${(v*100).toFixed(0)}%`,pp=(a,b)=>a===null||a===undefined||b===null||b===undefined?'—':`${signed((a-b)*100)} pp`;
+  const R={
+    area:['Projected area',`${f.A.area.toFixed(1)} m²`,`${f.B.area.toFixed(1)} m²`,`${signed(f.A.area-f.B.area)} m²`],
+    seat:['Shade, seating zone',pc(seat?.a),pc(seat?.b),pp(seat?.a,seat?.b)],
+    ground:['Shade, whole ground',pc(f.ground.a),pc(f.ground.b),pp(f.ground.a,f.ground.b)],
+    height:['Top height',`${f.A.height.toFixed(2)} m`,`${f.B.height.toFixed(2)} m`,`${signed(f.A.height-f.B.height,2)} m`],
+    timber:['Timber length',`${f.A.length.toFixed(1)} m`,`${f.B.length.toFixed(1)} m`,`${signed(f.A.length-f.B.length)} m`],
+    stock:['Fits the stock lengths',f.stockA.fits===null?'unknown':f.stockA.fits?'yes':'no',f.stockB.fits===null?'unknown':f.stockB.fits?'yes':'no',''],
+    members:['Members changed (1 mm tolerance)',`${f.changes.changed.length} of ${f.changes.changed.length+f.changes.same.length}`,'',''],
+  };
+  const order={whole:['area','ground','seat','height','timber','stock','members'],local:['seat','ground','height','timber','stock','members'],member:['members','seat','ground','timber','stock']}[tier]||[];
+  return order.map(k=>R[k]);
 }

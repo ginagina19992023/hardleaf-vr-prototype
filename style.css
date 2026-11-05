@@ -54,3 +54,5 @@ aside{z-index:1000}.walking #comparisonDock,.walking #comparisonControls,.walkin
 .xr-active #regionBar,.xr-active #diffPick,.vrpreview #regionBar,.vrpreview #diffPick,.walking #diffPick{display:none}
 #diffPick label{justify-content:flex-start;margin:0}#diffPick input{flex:none;width:auto;margin:0}.dock-top button{white-space:nowrap}
 .tier-tabs{display:inline-flex;margin-bottom:8px}#diffPick{bottom:calc(var(--hist-h,0px) + 300px)}
+#dockSummary{display:none;font-weight:600;font-size:13px;margin-right:auto;min-width:0}#comparisonDock.collapsed{width:auto;max-width:min(760px,calc(100vw - 60px));padding:8px 12px}#comparisonDock.collapsed>*:not(.tier-tabs):not(.dock-top){display:none}#comparisonDock.collapsed #stockIdentity,#comparisonDock.collapsed #allFocus{display:none}#comparisonDock.collapsed #dockSummary{display:block}#comparisonDock.collapsed .tier-tabs{margin-bottom:6px}
+#diffPick{bottom:calc(var(--hist-h,0px) + var(--dock-h,0px) + 22px)!important}

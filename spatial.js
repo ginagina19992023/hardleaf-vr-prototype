@@ -46,12 +46,12 @@ export class SpatialComparison {
     const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));geo.setAttribute('color',new THREE.Float32BufferAttribute(colors,4));geo.setIndex(indices);
     this.group.add(new THREE.Mesh(geo,new THREE.MeshBasicMaterial({vertexColors:true,transparent:true,side:THREE.DoubleSide,depthWrite:false})));
   }
-  update(f,{mode='beside',focus='all',offset=13,local=false,localBox=null,titleA='Current',titleB='Reference',showShadeTiles=true,onlyChanged=false}={}){this.onlyChanged=onlyChanged;
+  update(f,{mode='beside',focus='all',offset=13,local=false,localBox=null,titleA='Current',titleB='Reference',showShadeTiles=true,onlyChanged=false,metrics={area:true,height:true}}={}){this.onlyChanged=onlyChanged;
     this.clear();this.facts=f;const pairs=[[f.A,0,C.current,titleA,'A'],...(mode==='single'?[]:[[f.B,mode==='beside'?offset:0,C.reference,titleB,'B']])];
     for(const [g,off,color,title,key] of pairs){
       if(mode!=='overlay')this.label(`${key} / ${title}`,(g.minX+g.maxX)/2+off,g.height+1.2,-(g.minY+g.maxY)/2,color,4.1);
-      if(focus==='all'||focus==='area')this.footprint(g,off,color);
-      if(focus==='all'||focus==='height')this.height(g,off+(mode==='overlay'&&key==='B'?-.55:0),color);
+      if((focus==='all'||focus==='area')&&metrics.area)this.footprint(g,off,color);
+      if((focus==='all'||focus==='height')&&metrics.height)this.height(g,off+(mode==='overlay'&&key==='B'?-.55:0),color);
       if(focus==='material')this.material(g,off+(mode==='overlay'&&key==='B'?0:0),color);
     }
     if(showShadeTiles&&(focus==='shade'||focus==='all')){

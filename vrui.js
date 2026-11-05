@@ -105,7 +105,7 @@ export function buildScreens(s) {
   [['all','All'],['area','Area'],['shade','Shade'],['height','Height'],['material','Timber']].forEach(([id,label],i)=>cw.push(btn('focus:'+id,label,20+i*198,250,186,52,(v.focus||'all')===id,!s.ack)));
   if(!s.ack)cw.push(t(28,334,960,27,'Confirm the data limits on the left, then compare in 3D.',C.warn,true));
   else{
-    const detail=s.level===3?e.why.replace(/ A:.*$/, ''):s.level===2&&f?.changes?`${f.changes.moved.length} moved · ${f.changes.resized.length} resized · ${f.changes.added.length} added · ${f.changes.removed.length} removed`:'Follow the coloured models. Choose a lens or select a ground region.';
+    const detail=s.level===3?e.why.replace(/ A:.*$/, ''):s.level===2&&f?.changes?`${f.changes.changed.length} members changed (1 mm tolerance) · ${f.changes.same.length} unchanged`:'Follow the coloured models. Choose a lens or select a ground region.';
     cw.push(t(28,324,960,29,e.headline,C.ink,true),t(28,404,960,23,detail,C.mute),
       chip(20,512,474,40,'warn','A / current · orange'),chip(510,512,494,40,'blue','B / reference · blue ghost'));
     if(f)cw.push(t(28,477,960,18,`A: ${f.stockA?.text||'Stock fit unknown'} · length only; joints unchecked`,f.stockA?.fits===false?C.warn:C.mute));
