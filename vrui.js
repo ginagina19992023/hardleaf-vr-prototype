@@ -91,7 +91,8 @@ export function buildScreens(s) {
     slider(s.usage.options.map(u => u.id), s.usage.options.map(u => `${u.persons}`), 60, 546, 880, 54, Math.max(0, s.usage.options.findIndex(u => u.id === s.usage.id)), !s.ack),
     t(24, 616, 976, 24, `Intention I${s.goalVersion} · shade ≥ ${Math.round(s.target * 100)}% · ${fmtTime(s.hour)} · ${s.seatLine}`, C.ink, true),
     s.ack ? btn('goal', `Confirm intention I${s.goalVersion + 1}`, 24, 656, 480, 52, true) : btn('ack', 'I understand these limits', 24, 656, 480, 52, true),
-    t(530, 668, 470, 22, s.ack ? 'Confirm after changing roles or people: it becomes a version' : 'Confirm the limits first', C.mute),
+    t(530, 656, 470, 22, s.ack ? 'Confirm after changing roles or people: it becomes a version' : 'Confirm the limits first', C.mute),
+    t(530, 697, 180, 18, `Eye height ${(s.eyeHeight ?? 1.6).toFixed(2)} m`, C.ink), btn('eye:-', '−5 cm', 720, 690, 86, 36, false), btn('eye:reset', '1.60', 812, 690, 86, 36, false), btn('eye:+', '+5 cm', 904, 690, 86, 36, false),
     t(24, 734, 976, 18, `Assumed: ${s.sun?.iso || ''} ${fmtTime(s.hour)} · target ${Math.round(s.target * 100)}% (demo) · bare frame, direct light · north unknown`, C.mute));
   const left = { id: 'left', title: 'INTENT', widgets: lw };
 
