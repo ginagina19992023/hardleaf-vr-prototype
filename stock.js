@@ -17,5 +17,9 @@ export function pieceOpacity(b, min, max, selectedId) {
 
 export function pieceCard(b, jointList = []) {
   const with_ = [...new Set(jointList.map(j => j.with))];
-  return { title: `${b.id} · module ${b.module}`, size: `${(b.length * 1000).toFixed(0)} mm long · ${(b.width * 1000).toFixed(0)} × ${(b.height * 1000).toFixed(0)} mm`, joints: jointList.length ? `${jointList.length} joints, with ${with_.join(', ')}` : 'No joints recorded', photo: `./data/photos/${encodeURIComponent(b.id)}.jpg`, noPhoto: 'No photo of this piece yet. The geometry comes from the Hardleaf model; wood condition and defects are not recorded.' };
+  return { title: `${b.id} · module ${b.module}`, size: `${(b.length * 1000).toFixed(0)} mm long · ${(b.width * 1000).toFixed(0)} × ${(b.height * 1000).toFixed(0)} mm`, joints: jointList.length ? `${jointList.length} joints, with ${with_.join(', ')}` : 'No joints recorded', photo: `./data/photos/${encodeURIComponent(b.id)}.jpg`, noPhoto: 'No photo of this piece yet. Wood condition and defects are not recorded.',
+    // Until a piece has its own photo, the card shows a site photo of the project's base beams. It is marked as a placeholder: it is not a photo of this piece.
+    placeholder: { src: './data/photos/_placeholder_site_base_beams.jpg', alt: 'Placeholder: site photo of the base beams of the project', note: 'Placeholder image: project site photo (Gramazio Kohler Research, MIT licence), not a photo of this piece.' },
+    // A slot for a 3D scan of the piece. Nothing is recorded until a file exists at this path.
+    scan: { src: `./data/scans/${encodeURIComponent(b.id)}.glb`, note: `3D scan slot: no scan of ${b.id} recorded. Add data/scans/${b.id}.glb (metres).` } };
 }
