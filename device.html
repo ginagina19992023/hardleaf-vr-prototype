@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hardleaf connection check</title>
+<style>body{max-width:740px;margin:50px auto;padding:0 24px;background:#f1f4ec;color:#243b2e;font:17px/1.6 system-ui}h1{font-size:30px}li{padding:12px;border-bottom:1px solid #cfdbcc}button,a{color:#1f5a3c}button{padding:10px 20px;background:#fff;border:1px solid #8ca68c;border-radius:7px}small{color:#647561}.good{color:#227951}.bad{color:#ad6635}</style>
+<h1>Quest / compute connection</h1><p>Open this page in the <b>Meta Quest Browser</b> to test the headset. A Windows App virtual monitor tests the PC browser.</p>
+<ul id="checks"></ul><button id="again">Run again</button> <a href="/">Open spatial comparison</a>
+<p><small>USB: allow debugging and map port 8193 with QUEST-USB.cmd. Wi-Fi: use a trusted HTTPS address. Plain LAN HTTP cannot start immersive WebXR.</small></p>
+<script type="module">
+const el=document.getElementById('checks');
+async function run(){el.replaceChildren();const add=(name,value,ok)=>{const li=document.createElement('li');li.className=ok?'good':'bad';li.textContent=name+': '+value;el.append(li);};
+add('Secure context',window.isSecureContext?'yes':'no — use localhost or trusted HTTPS',window.isSecureContext);
+let immersive=false;try{immersive=!!navigator.xr&&await navigator.xr.isSessionSupported('immersive-vr');}catch{}
+add('Immersive VR',immersive?'supported':'not available in this browser / runtime',immersive);
+let room=false;try{room=!!navigator.xr&&await navigator.xr.isSessionSupported('immersive-ar');}catch{}
+add('Room placement (immersive AR)',room?'available; floor hit-test checked on entry':'not available in this browser / runtime',room);
+let j;const start=performance.now();try{const r=await fetch('/api/health');j=await r.json();add('Computer compute bridge',j.ok?`connected · ${Math.round(performance.now()-start)} ms round trip`:'unavailable',!!j.ok);}catch{add('Computer compute bridge','unavailable',false);}
+try{const r=await fetch('/data/scenarios.json');const d=await r.json();add('Model transfer',`${d.beams.length} members · ${d.scenarios.length} presets`,!!d.beams.length);}catch{add('Model transfer','failed',false);}
+add('Exact structure',j?.exact?'configured — requires solver validation':'not connected; no structural results are invented',false);
+}
+document.getElementById('again').onclick=run;run();
+</script></html>

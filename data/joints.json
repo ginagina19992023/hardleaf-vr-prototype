@@ -1,0 +1,8586 @@
+{
+ "source": "COMPAS Timber model.joints on GKR's published Hardleaf model (custom class PreferredFaceTButtJoint)",
+ "types": {
+  "TButtJoint": 146,
+  "XLapJoint": 132,
+  "LMiterJoint": 18,
+  "PreferredFaceTButtJoint": 46
+ },
+ "members": 182,
+ "joints": 342,
+ "note": "Joints as modelled by GKR. Re-notching a new piece of timber is NOT computed.",
+ "per_member": {
+  "E9": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.247,
+    "ref_side": 0,
+    "point": [
+     4.7876,
+     -0.0942,
+     1.1299
+    ],
+    "with": "E11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.504,
+    "ref_side": 1,
+    "point": [
+     4.9009,
+     0.0953,
+     1.0024
+    ],
+    "with": "E8"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.624,
+    "ref_side": 0,
+    "point": [
+     4.9605,
+     0.1855,
+     0.952
+    ],
+    "with": "E10"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.99,
+    "ref_side": 3,
+    "point": [
+     5.1208,
+     0.4533,
+     0.7683
+    ],
+    "with": "E13"
+   }
+  ],
+  "E13": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.271,
+    "ref_side": 2,
+    "point": [
+     4.9068,
+     0.448,
+     0.9778
+    ],
+    "with": "E12"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.52,
+    "ref_side": 1,
+    "point": [
+     5.1208,
+     0.4533,
+     0.7683
+    ],
+    "with": "E9"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.63,
+    "ref_side": 2,
+    "point": [
+     5.2143,
+     0.4557,
+     0.6742
+    ],
+    "with": "E14"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 3,
+    "point": [
+     5.5293,
+     0.4651,
+     0.3591
+    ],
+    "with": "E16"
+   }
+  ],
+  "G2": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.206,
+    "ref_side": 0,
+    "point": [
+     1.6056,
+     -0.5946,
+     2.0846
+    ],
+    "with": "G3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.475,
+    "ref_side": 1,
+    "point": [
+     1.7042,
+     -0.8764,
+     2.2134
+    ],
+    "with": "G5"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.644,
+    "ref_side": 0,
+    "point": [
+     1.7675,
+     -1.0547,
+     2.2925
+    ],
+    "with": "G1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     1.8964,
+     -1.4204,
+     2.4592
+    ],
+    "with": "G9"
+   }
+  ],
+  "G3": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.208,
+    "ref_side": 2,
+    "point": [
+     2.0018,
+     -0.6383,
+     2.2467
+    ],
+    "with": "G1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.454,
+    "ref_side": 1,
+    "point": [
+     1.75,
+     -0.6085,
+     2.1506
+    ],
+    "with": "G12"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.599,
+    "ref_side": 2,
+    "point": [
+     1.6056,
+     -0.5946,
+     2.0846
+    ],
+    "with": "G2"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.2132,
+     -0.5562,
+     1.9082
+    ],
+    "with": "G4"
+   }
+  ],
+  "A22": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     5.7992,
+     0.5299,
+     0.0
+    ],
+    "with": "E18"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.256,
+    "ref_side": 2,
+    "point": [
+     5.8177,
+     0.6801,
+     0.012
+    ],
+    "with": "E15"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.646,
+    "ref_side": 2,
+    "point": [
+     5.8272,
+     0.9097,
+     0.0128
+    ],
+    "with": "A21"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     5.823,
+     1.1182,
+     0.0
+    ],
+    "with": "A15"
+   }
+  ],
+  "A15": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     5.823,
+     1.1182,
+     0.0
+    ],
+    "with": "A22"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.202,
+    "ref_side": 2,
+    "point": [
+     5.8574,
+     1.2936,
+     0.0127
+    ],
+    "with": "A13"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.443,
+    "ref_side": 2,
+    "point": [
+     5.8834,
+     1.5052,
+     0.0125
+    ],
+    "with": "A14"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.713,
+    "ref_side": 2,
+    "point": [
+     5.9107,
+     1.7415,
+     0.0102
+    ],
+    "with": "A17"
+   }
+  ],
+  "A4": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.316,
+    "ref_side": 2,
+    "point": [
+     4.8101,
+     1.7938,
+     1.1039
+    ],
+    "with": "A3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.529,
+    "ref_side": 1,
+    "point": [
+     4.9427,
+     1.9168,
+     1.0154
+    ],
+    "with": "A6"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.627,
+    "ref_side": 0,
+    "point": [
+     5.0057,
+     1.9804,
+     0.9882
+    ],
+    "with": "A1"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     5.225,
+     2.2107,
+     0.828
+    ],
+    "with": "A17"
+   }
+  ],
+  "A1": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.22,
+    "ref_side": 2,
+    "point": [
+     5.0057,
+     1.9804,
+     0.9882
+    ],
+    "with": "A4"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.467,
+    "ref_side": 1,
+    "point": [
+     4.7775,
+     2.0818,
+     1.1738
+    ],
+    "with": "A2"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.602,
+    "ref_side": 0,
+    "point": [
+     4.6522,
+     2.1369,
+     1.2731
+    ],
+    "with": "A3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     4.2701,
+     2.2958,
+     1.5644
+    ],
+    "with": "A27"
+   }
+  ],
+  "D2": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.165,
+    "ref_side": 2,
+    "point": [
+     1.6598,
+     2.1357,
+     1.9186
+    ],
+    "with": "D3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.437,
+    "ref_side": 1,
+    "point": [
+     1.8006,
+     1.8586,
+     1.9397
+    ],
+    "with": "D7"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.574,
+    "ref_side": 2,
+    "point": [
+     1.8731,
+     1.7189,
+     1.9463
+    ],
+    "with": "D1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     2.088,
+     1.2937,
+     1.9822
+    ],
+    "with": "D9"
+   }
+  ],
+  "D9": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.181,
+    "ref_side": 0,
+    "point": [
+     2.2172,
+     1.5607,
+     2.0104
+    ],
+    "with": "D8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.448,
+    "ref_side": 1,
+    "point": [
+     2.088,
+     1.2937,
+     1.9822
+    ],
+    "with": "D2"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.576,
+    "ref_side": 0,
+    "point": [
+     2.0259,
+     1.1638,
+     1.9924
+    ],
+    "with": "D10"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.8242,
+     0.7501,
+     1.9314
+    ],
+    "with": "G23"
+   }
+  ],
+  "F1": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.191,
+    "ref_side": 0,
+    "point": [
+     -0.1717,
+     -0.7009,
+     0.9385
+    ],
+    "with": "F2"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.481,
+    "ref_side": 1,
+    "point": [
+     0.0121,
+     -0.4629,
+     1.0195
+    ],
+    "with": "F21"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.616,
+    "ref_side": 0,
+    "point": [
+     0.0915,
+     -0.3491,
+     1.064
+    ],
+    "with": "F3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     0.3272,
+     -0.0407,
+     1.1706
+    ],
+    "with": "F6"
+   }
+  ],
+  "F6": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.227,
+    "ref_side": 2,
+    "point": [
+     0.1027,
+     -0.0084,
+     0.9825
+    ],
+    "with": "F4"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.473,
+    "ref_side": 1,
+    "point": [
+     0.3272,
+     -0.0407,
+     1.1706
+    ],
+    "with": "F1"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.61,
+    "ref_side": 2,
+    "point": [
+     0.456,
+     -0.0595,
+     1.2687
+    ],
+    "with": "F5"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     0.8105,
+     -0.1109,
+     1.5518
+    ],
+    "with": "F8"
+   }
+  ],
+  "E7": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.23,
+    "ref_side": 2,
+    "point": [
+     4.9247,
+     -0.4372,
+     1.0962
+    ],
+    "with": "E6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.472,
+    "ref_side": 1,
+    "point": [
+     5.1402,
+     -0.3681,
+     0.8606
+    ],
+    "with": "E3"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.597,
+    "ref_side": 2,
+    "point": [
+     5.2505,
+     -0.3326,
+     0.7382
+    ],
+    "with": "E8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.976,
+    "ref_side": 3,
+    "point": [
+     5.5803,
+     -0.2253,
+     0.3608
+    ],
+    "with": "E20"
+   }
+  ],
+  "E8": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.259,
+    "ref_side": 0,
+    "point": [
+     5.2505,
+     -0.3326,
+     0.7382
+    ],
+    "with": "E7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.499,
+    "ref_side": 1,
+    "point": [
+     5.1352,
+     -0.1918,
+     0.8249
+    ],
+    "with": "E19"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.621,
+    "ref_side": 2,
+    "point": [
+     5.0751,
+     -0.1203,
+     0.8678
+    ],
+    "with": "E6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.988,
+    "ref_side": 3,
+    "point": [
+     4.9009,
+     0.0953,
+     1.0024
+    ],
+    "with": "E9"
+   }
+  ],
+  "C8": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.235,
+    "ref_side": 2,
+    "point": [
+     1.0927,
+     1.4464,
+     1.617
+    ],
+    "with": "C9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.484,
+    "ref_side": 1,
+    "point": [
+     0.8475,
+     1.4364,
+     1.453
+    ],
+    "with": "D6"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.602,
+    "ref_side": 2,
+    "point": [
+     0.7364,
+     1.4317,
+     1.3692
+    ],
+    "with": "C7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     0.3629,
+     1.416,
+     1.1004
+    ],
+    "with": "C4"
+   }
+  ],
+  "C4": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.148,
+    "ref_side": 0,
+    "point": [
+     0.515,
+     1.1705,
+     1.1965
+    ],
+    "with": "C6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.438,
+    "ref_side": 1,
+    "point": [
+     0.3629,
+     1.416,
+     1.1004
+    ],
+    "with": "C8"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.563,
+    "ref_side": 2,
+    "point": [
+     0.2994,
+     1.5221,
+     1.0564
+    ],
+    "with": "C5"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     0.0701,
+     1.885,
+     0.9199
+    ],
+    "with": "C1"
+   }
+  ],
+  "A16": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.0,
+    "ref_side": 1,
+    "point": [
+     5.5622,
+     1.9741,
+     0.4346
+    ],
+    "with": "A17"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     5.769,
+     1.4444,
+     0.1499
+    ],
+    "with": "A14"
+   }
+  ],
+  "A17": [
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     5.1169,
+     2.286,
+     0.9388
+    ],
+    "with": "A5"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.126,
+    "ref_side": 3,
+    "point": [
+     5.225,
+     2.2107,
+     0.828
+    ],
+    "with": "A4"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.542,
+    "ref_side": 3,
+    "point": [
+     5.5622,
+     1.9741,
+     0.4346
+    ],
+    "with": "A16"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.978,
+    "ref_side": 3,
+    "point": [
+     5.9107,
+     1.7415,
+     0.0102
+    ],
+    "with": "A15"
+   }
+  ],
+  "E27": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.217,
+    "ref_side": 0,
+    "point": [
+     3.8657,
+     0.328,
+     1.7173
+    ],
+    "with": "E28"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.482,
+    "ref_side": 1,
+    "point": [
+     3.9971,
+     0.551,
+     1.6245
+    ],
+    "with": "E25"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.608,
+    "ref_side": 0,
+    "point": [
+     4.0661,
+     0.6595,
+     1.5959
+    ],
+    "with": "E29"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.99,
+    "ref_side": 1,
+    "point": [
+     4.2511,
+     0.9795,
+     1.4499
+    ],
+    "with": "A18"
+   }
+  ],
+  "A18": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.19,
+    "ref_side": 2,
+    "point": [
+     4.012,
+     1.0093,
+     1.6111
+    ],
+    "with": "A20"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.452,
+    "ref_side": 1,
+    "point": [
+     4.2511,
+     0.9795,
+     1.4499
+    ],
+    "with": "E27"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.58,
+    "ref_side": 0,
+    "point": [
+     4.3657,
+     0.9652,
+     1.3675
+    ],
+    "with": "A19"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 3,
+    "point": [
+     4.7292,
+     0.9196,
+     1.0979
+    ],
+    "with": "A10"
+   }
+  ],
+  "C22": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.177,
+    "ref_side": 0,
+    "point": [
+     0.5636,
+     2.7415,
+     1.4894
+    ],
+    "with": "C21"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.441,
+    "ref_side": 1,
+    "point": [
+     0.7251,
+     2.4963,
+     1.5344
+    ],
+    "with": "C16"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.572,
+    "ref_side": 2,
+    "point": [
+     0.8073,
+     2.3745,
+     1.5544
+    ],
+    "with": "D5"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.0591,
+     1.9817,
+     1.6343
+    ],
+    "with": "D6"
+   }
+  ],
+  "C21": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.17,
+    "ref_side": 2,
+    "point": [
+     0.925,
+     2.8066,
+     1.7463
+    ],
+    "with": "D5"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.444,
+    "ref_side": 1,
+    "point": [
+     0.675,
+     2.7612,
+     1.5737
+    ],
+    "with": "C23"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.57,
+    "ref_side": 2,
+    "point": [
+     0.5636,
+     2.7415,
+     1.4894
+    ],
+    "with": "C22"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     0.1781,
+     2.6722,
+     1.2109
+    ],
+    "with": "C17"
+   }
+  ],
+  "C19": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     -0.3321,
+     3.0889,
+     0.9563
+    ],
+    "with": "C26"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.133,
+    "ref_side": 3,
+    "point": [
+     -0.1961,
+     3.1184,
+     1.0742
+    ],
+    "with": "C17"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     0.7267,
+     3.3271,
+     1.786
+    ],
+    "with": "D15"
+   }
+  ],
+  "D15": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     0.7267,
+     3.3271,
+     1.786
+    ],
+    "with": "C19"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.129,
+    "ref_side": 3,
+    "point": [
+     0.8705,
+     3.3317,
+     1.8612
+    ],
+    "with": "C23"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.315,
+    "ref_side": 3,
+    "point": [
+     1.0844,
+     3.3448,
+     1.9561
+    ],
+    "with": "D5"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.825,
+    "ref_side": 3,
+    "point": [
+     1.6746,
+     3.3807,
+     2.2088
+    ],
+    "with": "D14"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     1.8796,
+     3.3959,
+     2.2869
+    ],
+    "with": "B11"
+   }
+  ],
+  "G23": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.216,
+    "ref_side": 2,
+    "point": [
+     2.0789,
+     0.7384,
+     2.0167
+    ],
+    "with": "G22"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.466,
+    "ref_side": 1,
+    "point": [
+     1.8242,
+     0.7501,
+     1.9314
+    ],
+    "with": "D9"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.594,
+    "ref_side": 0,
+    "point": [
+     1.6972,
+     0.7547,
+     1.8796
+    ],
+    "with": "G24"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.304,
+     0.769,
+     1.7188
+    ],
+    "with": "G21"
+   }
+  ],
+  "G21": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.22,
+    "ref_side": 0,
+    "point": [
+     1.4371,
+     0.4945,
+     1.7964
+    ],
+    "with": "G20"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.481,
+    "ref_side": 1,
+    "point": [
+     1.304,
+     0.769,
+     1.7188
+    ],
+    "with": "G23"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.597,
+    "ref_side": 2,
+    "point": [
+     1.2461,
+     0.8914,
+     1.6808
+    ],
+    "with": "G19"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     1.0425,
+     1.3079,
+     1.567
+    ],
+    "with": "C9"
+   }
+  ],
+  "E14": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.277,
+    "ref_side": 0,
+    "point": [
+     5.2143,
+     0.4557,
+     0.6742
+    ],
+    "with": "E13"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.495,
+    "ref_side": 1,
+    "point": [
+     5.116,
+     0.6183,
+     0.7566
+    ],
+    "with": "E15"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.622,
+    "ref_side": 2,
+    "point": [
+     5.0598,
+     0.7133,
+     0.8058
+    ],
+    "with": "E12"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.989,
+    "ref_side": 3,
+    "point": [
+     4.9023,
+     0.9871,
+     0.9522
+    ],
+    "with": "A11"
+   }
+  ],
+  "E10": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.233,
+    "ref_side": 2,
+    "point": [
+     4.9605,
+     0.1855,
+     0.952
+    ],
+    "with": "E9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.485,
+    "ref_side": 1,
+    "point": [
+     4.7271,
+     0.1644,
+     1.1455
+    ],
+    "with": "E12"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.634,
+    "ref_side": 0,
+    "point": [
+     4.5885,
+     0.1512,
+     1.258
+    ],
+    "with": "E11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     4.2454,
+     0.1183,
+     1.5168
+    ],
+    "with": "E25"
+   }
+  ],
+  "C7": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.187,
+    "ref_side": 0,
+    "point": [
+     0.7364,
+     1.4317,
+     1.3692
+    ],
+    "with": "C8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.449,
+    "ref_side": 1,
+    "point": [
+     0.8596,
+     1.1745,
+     1.4512
+    ],
+    "with": "C6"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.59,
+    "ref_side": 2,
+    "point": [
+     0.9278,
+     1.0368,
+     1.4919
+    ],
+    "with": "C9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.1111,
+     0.6436,
+     1.6244
+    ],
+    "with": "G19"
+   }
+  ],
+  "C9": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.17,
+    "ref_side": 0,
+    "point": [
+     0.9278,
+     1.0368,
+     1.4919
+    ],
+    "with": "C7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.442,
+    "ref_side": 1,
+    "point": [
+     1.0425,
+     1.3079,
+     1.567
+    ],
+    "with": "G21"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.582,
+    "ref_side": 0,
+    "point": [
+     1.0927,
+     1.4464,
+     1.617
+    ],
+    "with": "C8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.2675,
+     1.8541,
+     1.7269
+    ],
+    "with": "D7"
+   }
+  ],
+  "F18": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.184,
+    "ref_side": 2,
+    "point": [
+     -1.2803,
+     -1.0912,
+     0.0118
+    ],
+    "with": "F20"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.344,
+    "ref_side": 2,
+    "point": [
+     -1.1977,
+     -0.9154,
+     0.0134
+    ],
+    "with": "F17"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.853,
+    "ref_side": 2,
+    "point": [
+     -0.9321,
+     -0.3575,
+     0.0118
+    ],
+    "with": "F16"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     -0.8438,
+     -0.2012,
+     0.0
+    ],
+    "with": "F14"
+   }
+  ],
+  "F14": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     -0.8438,
+     -0.2012,
+     0.0
+    ],
+    "with": "F18"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.249,
+    "ref_side": 2,
+    "point": [
+     -0.8182,
+     0.0351,
+     0.0131
+    ],
+    "with": "F13"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.834,
+    "ref_side": 2,
+    "point": [
+     -0.7287,
+     0.586,
+     0.0141
+    ],
+    "with": "F12"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     -0.6888,
+     0.7399,
+     0.0
+    ],
+    "with": "C14"
+   }
+  ],
+  "F9": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.177,
+    "ref_side": 0,
+    "point": [
+     0.864,
+     -0.26,
+     1.6206
+    ],
+    "with": "F8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.45,
+    "ref_side": 1,
+    "point": [
+     1.0117,
+     -0.0049,
+     1.6578
+    ],
+    "with": "G4"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.575,
+    "ref_side": 0,
+    "point": [
+     1.0712,
+     0.1146,
+     1.6856
+    ],
+    "with": "F7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.2979,
+     0.5013,
+     1.739
+    ],
+    "with": "G20"
+   }
+  ],
+  "G20": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.192,
+    "ref_side": 2,
+    "point": [
+     1.0333,
+     0.5142,
+     1.6116
+    ],
+    "with": "G19"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.465,
+    "ref_side": 1,
+    "point": [
+     1.2979,
+     0.5013,
+     1.739
+    ],
+    "with": "F9"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.606,
+    "ref_side": 2,
+    "point": [
+     1.4371,
+     0.4945,
+     1.7964
+    ],
+    "with": "G21"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.8186,
+     0.4761,
+     1.955
+    ],
+    "with": "G24"
+   }
+  ],
+  "B9": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.304,
+    "ref_side": 2,
+    "point": [
+     2.9972,
+     2.7019,
+     2.1711
+    ],
+    "with": "B8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.531,
+    "ref_side": 1,
+    "point": [
+     2.7838,
+     2.7258,
+     2.1832
+    ],
+    "with": "B10"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.663,
+    "ref_side": 0,
+    "point": [
+     2.6577,
+     2.7271,
+     2.1888
+    ],
+    "with": "B7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     2.339,
+     2.7537,
+     2.1882
+    ],
+    "with": "D11"
+   }
+  ],
+  "D11": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.203,
+    "ref_side": 2,
+    "point": [
+     2.4592,
+     2.512,
+     2.1362
+    ],
+    "with": "D12"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.427,
+    "ref_side": 1,
+    "point": [
+     2.339,
+     2.7537,
+     2.1882
+    ],
+    "with": "B9"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.684,
+    "ref_side": 2,
+    "point": [
+     2.2015,
+     3.0329,
+     2.2362
+    ],
+    "with": "D13"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.994,
+    "ref_side": 1,
+    "point": [
+     2.0345,
+     3.3694,
+     2.2978
+    ],
+    "with": "B11"
+   }
+  ],
+  "C3": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.194,
+    "ref_side": 2,
+    "point": [
+     0.1109,
+     2.0426,
+     0.9923
+    ],
+    "with": "C1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.459,
+    "ref_side": 1,
+    "point": [
+     -0.1172,
+     2.0105,
+     0.7848
+    ],
+    "with": "C15"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.61,
+    "ref_side": 2,
+    "point": [
+     -0.2401,
+     1.9931,
+     0.6605
+    ],
+    "with": "C2"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     -0.5829,
+     1.9409,
+     0.3571
+    ],
+    "with": "C12"
+   }
+  ],
+  "C12": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.177,
+    "ref_side": 0,
+    "point": [
+     -0.3653,
+     1.6593,
+     0.4665
+    ],
+    "with": "C11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.474,
+    "ref_side": 1,
+    "point": [
+     -0.5829,
+     1.9409,
+     0.3571
+    ],
+    "with": "C3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.989,
+    "ref_side": 1,
+    "point": [
+     -0.9713,
+     2.4143,
+     0.1578
+    ],
+    "with": "C24"
+   }
+  ],
+  "G10": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.018,
+    "ref_side": 3,
+    "point": [
+     1.6194,
+     -2.0726,
+     2.69
+    ],
+    "with": "G14"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.987,
+    "ref_side": 3,
+    "point": [
+     2.1267,
+     -1.5594,
+     2.5083
+    ],
+    "with": "G8"
+   }
+  ],
+  "G14": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     0.6099,
+     -1.9106,
+     2.1352
+    ],
+    "with": "F25"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.201,
+    "ref_side": 1,
+    "point": [
+     0.839,
+     -1.9435,
+     2.2718
+    ],
+    "with": "G16"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.384,
+    "ref_side": 1,
+    "point": [
+     1.053,
+     -1.9805,
+     2.3855
+    ],
+    "with": "G15"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.665,
+    "ref_side": 1,
+    "point": [
+     1.3797,
+     -2.0329,
+     2.5649
+    ],
+    "with": "G9"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.869,
+    "ref_side": 1,
+    "point": [
+     1.6194,
+     -2.0726,
+     2.69
+    ],
+    "with": "G10"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     1.775,
+     -2.1038,
+     2.7652
+    ],
+    "with": "G18"
+   }
+  ],
+  "G18": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     1.775,
+     -2.1038,
+     2.7652
+    ],
+    "with": "G14"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     2.9696,
+     -2.0095,
+     2.7519
+    ],
+    "with": "H5"
+   }
+  ],
+  "D7": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.195,
+    "ref_side": 2,
+    "point": [
+     1.0051,
+     1.8543,
+     1.6064
+    ],
+    "with": "D6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.461,
+    "ref_side": 1,
+    "point": [
+     1.2675,
+     1.8541,
+     1.7269
+    ],
+    "with": "C9"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.613,
+    "ref_side": 0,
+    "point": [
+     1.4201,
+     1.8553,
+     1.7887
+    ],
+    "with": "D4"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.8006,
+     1.8586,
+     1.9397
+    ],
+    "with": "D2"
+   }
+  ],
+  "D6": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.247,
+    "ref_side": 0,
+    "point": [
+     1.1633,
+     2.2548,
+     1.7296
+    ],
+    "with": "D4"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.496,
+    "ref_side": 1,
+    "point": [
+     1.0591,
+     1.9817,
+     1.6343
+    ],
+    "with": "C22"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.61,
+    "ref_side": 0,
+    "point": [
+     1.0051,
+     1.8543,
+     1.6064
+    ],
+    "with": "D7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     0.8475,
+     1.4364,
+     1.453
+    ],
+    "with": "C8"
+   }
+  ],
+  "D13": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.178,
+    "ref_side": 0,
+    "point": [
+     2.2015,
+     3.0329,
+     2.2362
+    ],
+    "with": "D11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.503,
+    "ref_side": 1,
+    "point": [
+     2.0285,
+     2.6801,
+     2.1255
+    ],
+    "with": "D14"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.591,
+    "ref_side": 0,
+    "point": [
+     1.9892,
+     2.5746,
+     2.1168
+    ],
+    "with": "D12"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     1.7835,
+     2.138,
+     1.9677
+    ],
+    "with": "D3"
+   }
+  ],
+  "C10": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.209,
+    "ref_side": 2,
+    "point": [
+     0.231,
+     0.8541,
+     0.9785
+    ],
+    "with": "F10"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.506,
+    "ref_side": 1,
+    "point": [
+     0.0036,
+     0.834,
+     0.764
+    ],
+    "with": "C5"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.654,
+    "ref_side": 2,
+    "point": [
+     -0.1036,
+     0.8234,
+     0.6516
+    ],
+    "with": "F11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.998,
+    "ref_side": 1,
+    "point": [
+     -0.3698,
+     0.8007,
+     0.406
+    ],
+    "with": "C20"
+   }
+  ],
+  "C20": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.221,
+    "ref_side": 0,
+    "point": [
+     -0.2537,
+     0.5874,
+     0.5155
+    ],
+    "with": "F12"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.453,
+    "ref_side": 1,
+    "point": [
+     -0.3698,
+     0.8007,
+     0.406
+    ],
+    "with": "C10"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.997,
+    "ref_side": 1,
+    "point": [
+     -0.6496,
+     1.302,
+     0.1554
+    ],
+    "with": "C13"
+   }
+  ],
+  "A14": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.089,
+    "ref_side": 1,
+    "point": [
+     5.8834,
+     1.5052,
+     0.0125
+    ],
+    "with": "A15"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.512,
+    "ref_side": 1,
+    "point": [
+     5.769,
+     1.4444,
+     0.1499
+    ],
+    "with": "A16"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     5.6235,
+     1.3482,
+     0.2787
+    ],
+    "with": "A13"
+   }
+  ],
+  "A13": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.033,
+    "ref_side": 1,
+    "point": [
+     5.8574,
+     1.2936,
+     0.0127
+    ],
+    "with": "A15"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.36,
+    "ref_side": 1,
+    "point": [
+     5.6235,
+     1.3482,
+     0.2787
+    ],
+    "with": "A14"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.653,
+    "ref_side": 0,
+    "point": [
+     5.404,
+     1.3978,
+     0.5069
+    ],
+    "with": "A12"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     5.1447,
+     1.4561,
+     0.765
+    ],
+    "with": "A6"
+   }
+  ],
+  "A28": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.166,
+    "ref_side": 2,
+    "point": [
+     4.0367,
+     2.1706,
+     1.6901
+    ],
+    "with": "A26"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.433,
+    "ref_side": 1,
+    "point": [
+     4.2776,
+     2.0767,
+     1.521
+    ],
+    "with": "A23"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.562,
+    "ref_side": 0,
+    "point": [
+     4.3911,
+     2.0326,
+     1.4354
+    ],
+    "with": "A27"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 3,
+    "point": [
+     4.7666,
+     1.886,
+     1.1479
+    ],
+    "with": "A3"
+   }
+  ],
+  "A27": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.252,
+    "ref_side": 2,
+    "point": [
+     4.3911,
+     2.0326,
+     1.4354
+    ],
+    "with": "A28"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.479,
+    "ref_side": 1,
+    "point": [
+     4.2701,
+     2.2958,
+     1.5644
+    ],
+    "with": "A1"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.592,
+    "ref_side": 2,
+    "point": [
+     4.1983,
+     2.4178,
+     1.6307
+    ],
+    "with": "A26"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.996,
+    "ref_side": 3,
+    "point": [
+     3.9658,
+     2.879,
+     1.853
+    ],
+    "with": "A30"
+   }
+  ],
+  "G22": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.231,
+    "ref_side": 0,
+    "point": [
+     1.8826,
+     0.3315,
+     1.9903
+    ],
+    "with": "G24"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.487,
+    "ref_side": 1,
+    "point": [
+     2.0204,
+     0.6052,
+     1.9961
+    ],
+    "with": "G13"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.608,
+    "ref_side": 0,
+    "point": [
+     2.0789,
+     0.7384,
+     2.0167
+    ],
+    "with": "G23"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     2.29,
+     1.1464,
+     2.0144
+    ],
+    "with": "D10"
+   }
+  ],
+  "B8": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.214,
+    "ref_side": 0,
+    "point": [
+     2.8478,
+     2.3561,
+     2.1073
+    ],
+    "with": "B7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.426,
+    "ref_side": 1,
+    "point": [
+     2.9473,
+     2.573,
+     2.1314
+    ],
+    "with": "B5"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.552,
+    "ref_side": 0,
+    "point": [
+     2.9972,
+     2.7019,
+     2.1711
+    ],
+    "with": "B9"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.996,
+    "ref_side": 1,
+    "point": [
+     3.1886,
+     3.163,
+     2.2176
+    ],
+    "with": "A30"
+   }
+  ],
+  "F17": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.071,
+    "ref_side": 3,
+    "point": [
+     -1.1977,
+     -0.9154,
+     0.0134
+    ],
+    "with": "F18"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.463,
+    "ref_side": 1,
+    "point": [
+     -0.9501,
+     -0.6988,
+     0.1808
+    ],
+    "with": "F19"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.946,
+    "ref_side": 1,
+    "point": [
+     -0.6383,
+     -0.4149,
+     0.3514
+    ],
+    "with": "F16"
+   }
+  ],
+  "F16": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.04,
+    "ref_side": 1,
+    "point": [
+     -0.9321,
+     -0.3575,
+     0.0118
+    ],
+    "with": "F18"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.445,
+    "ref_side": 1,
+    "point": [
+     -0.6383,
+     -0.4149,
+     0.3514
+    ],
+    "with": "F17"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.639,
+    "ref_side": 0,
+    "point": [
+     -0.4962,
+     -0.4434,
+     0.5122
+    ],
+    "with": "F15"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     -0.2239,
+     -0.4992,
+     0.8052
+    ],
+    "with": "F2"
+   }
+  ],
+  "G16": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.2,
+    "ref_side": 0,
+    "point": [
+     0.5248,
+     -1.0855,
+     1.6589
+    ],
+    "with": "F26"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.44,
+    "ref_side": 1,
+    "point": [
+     0.5997,
+     -1.3537,
+     1.8393
+    ],
+    "with": "F22"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.561,
+    "ref_side": 2,
+    "point": [
+     0.6666,
+     -1.4724,
+     1.9388
+    ],
+    "with": "G17"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.998,
+    "ref_side": 3,
+    "point": [
+     0.839,
+     -1.9435,
+     2.2718
+    ],
+    "with": "G14"
+   }
+  ],
+  "A2": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.0,
+    "ref_side": 1,
+    "point": [
+     4.9891,
+     2.3556,
+     1.0567
+    ],
+    "with": "A5"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.975,
+    "ref_side": 1,
+    "point": [
+     4.7775,
+     2.0818,
+     1.1738
+    ],
+    "with": "A1"
+   }
+  ],
+  "A5": [
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     4.1436,
+     2.816,
+     1.7591
+    ],
+    "with": "A30"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.864,
+    "ref_side": 3,
+    "point": [
+     4.9891,
+     2.3556,
+     1.0567
+    ],
+    "with": "A2"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     5.1169,
+     2.286,
+     0.9388
+    ],
+    "with": "A17"
+   }
+  ],
+  "G24": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.165,
+    "ref_side": 2,
+    "point": [
+     1.6972,
+     0.7547,
+     1.8796
+    ],
+    "with": "G23"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.44,
+    "ref_side": 1,
+    "point": [
+     1.8186,
+     0.4761,
+     1.955
+    ],
+    "with": "G20"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.583,
+    "ref_side": 2,
+    "point": [
+     1.8826,
+     0.3315,
+     1.9903
+    ],
+    "with": "G22"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     2.0612,
+     -0.0805,
+     2.1053
+    ],
+    "with": "G12"
+   }
+  ],
+  "G12": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.178,
+    "ref_side": 0,
+    "point": [
+     2.2126,
+     0.1771,
+     2.0855
+    ],
+    "with": "G13"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.445,
+    "ref_side": 1,
+    "point": [
+     2.0612,
+     -0.0805,
+     2.1053
+    ],
+    "with": "G24"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.597,
+    "ref_side": 0,
+    "point": [
+     1.9743,
+     -0.2259,
+     2.1427
+    ],
+    "with": "G11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.75,
+     -0.6085,
+     2.1506
+    ],
+    "with": "G3"
+   }
+  ],
+  "C24": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.069,
+    "ref_side": 3,
+    "point": [
+     -0.9845,
+     2.1419,
+     0.013
+    ],
+    "with": "C25"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.414,
+    "ref_side": 1,
+    "point": [
+     -0.9713,
+     2.4143,
+     0.1578
+    ],
+    "with": "C12"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.998,
+    "ref_side": 1,
+    "point": [
+     -0.9177,
+     2.888,
+     0.3703
+    ],
+    "with": "C26"
+   }
+  ],
+  "C26": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.024,
+    "ref_side": 3,
+    "point": [
+     -1.2313,
+     2.7818,
+     0.0116
+    ],
+    "with": "C25"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.379,
+    "ref_side": 3,
+    "point": [
+     -0.9177,
+     2.888,
+     0.3703
+    ],
+    "with": "C24"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.861,
+    "ref_side": 3,
+    "point": [
+     -0.4693,
+     3.0388,
+     0.8331
+    ],
+    "with": "C18"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     -0.3321,
+     3.0889,
+     0.9563
+    ],
+    "with": "C19"
+   }
+  ],
+  "A25": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.176,
+    "ref_side": 2,
+    "point": [
+     4.0923,
+     1.8051,
+     1.6131
+    ],
+    "with": "A23"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.456,
+    "ref_side": 1,
+    "point": [
+     3.8203,
+     1.8665,
+     1.743
+    ],
+    "with": "A26"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.593,
+    "ref_side": 0,
+    "point": [
+     3.6856,
+     1.8962,
+     1.801
+    ],
+    "with": "A24"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     3.275,
+     1.9834,
+     1.9631
+    ],
+    "with": "B5"
+   }
+  ],
+  "A23": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.26,
+    "ref_side": 0,
+    "point": [
+     3.8754,
+     1.506,
+     1.6832
+    ],
+    "with": "A24"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.509,
+    "ref_side": 1,
+    "point": [
+     4.0121,
+     1.7006,
+     1.6271
+    ],
+    "with": "A19"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.643,
+    "ref_side": 0,
+    "point": [
+     4.0923,
+     1.8051,
+     1.6131
+    ],
+    "with": "A25"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.99,
+    "ref_side": 1,
+    "point": [
+     4.2776,
+     2.0767,
+     1.521
+    ],
+    "with": "A28"
+   }
+  ],
+  "C15": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.154,
+    "ref_side": 0,
+    "point": [
+     0.051,
+     2.8262,
+     1.1617
+    ],
+    "with": "C17"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.46,
+    "ref_side": 1,
+    "point": [
+     -0.0097,
+     2.5179,
+     1.0144
+    ],
+    "with": "C18"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.591,
+    "ref_side": 0,
+    "point": [
+     -0.0428,
+     2.3825,
+     0.9614
+    ],
+    "with": "C16"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.96,
+    "ref_side": 1,
+    "point": [
+     -0.1172,
+     2.0105,
+     0.7848
+    ],
+    "with": "C3"
+   }
+  ],
+  "A11": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.296,
+    "ref_side": 0,
+    "point": [
+     4.7805,
+     0.831,
+     1.055
+    ],
+    "with": "A10"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.534,
+    "ref_side": 1,
+    "point": [
+     4.9023,
+     0.9871,
+     0.9522
+    ],
+    "with": "E14"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.654,
+    "ref_side": 0,
+    "point": [
+     4.9708,
+     1.0667,
+     0.9095
+    ],
+    "with": "A9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.988,
+    "ref_side": 1,
+    "point": [
+     5.1368,
+     1.2844,
+     0.759
+    ],
+    "with": "A7"
+   }
+  ],
+  "C1": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.21,
+    "ref_side": 0,
+    "point": [
+     -0.0034,
+     1.6235,
+     0.807
+    ],
+    "with": "C2"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.466,
+    "ref_side": 1,
+    "point": [
+     0.0701,
+     1.885,
+     0.9199
+    ],
+    "with": "C4"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.621,
+    "ref_side": 0,
+    "point": [
+     0.1109,
+     2.0426,
+     0.9923
+    ],
+    "with": "C3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     0.2132,
+     2.4195,
+     1.1591
+    ],
+    "with": "C16"
+   }
+  ],
+  "C16": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.177,
+    "ref_side": 2,
+    "point": [
+     -0.0428,
+     2.3825,
+     0.9614
+    ],
+    "with": "C15"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.452,
+    "ref_side": 1,
+    "point": [
+     0.2132,
+     2.4195,
+     1.1591
+    ],
+    "with": "C1"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.622,
+    "ref_side": 0,
+    "point": [
+     0.3737,
+     2.4435,
+     1.2774
+    ],
+    "with": "C17"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     0.7251,
+     2.4963,
+     1.5344
+    ],
+    "with": "C22"
+   }
+  ],
+  "H3": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.19,
+    "ref_side": 2,
+    "point": [
+     2.6135,
+     -1.2783,
+     2.4825
+    ],
+    "with": "H1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.445,
+    "ref_side": 1,
+    "point": [
+     2.7723,
+     -1.4913,
+     2.5595
+    ],
+    "with": "G8"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.546,
+    "ref_side": 0,
+    "point": [
+     2.8369,
+     -1.5781,
+     2.5817
+    ],
+    "with": "H2"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.988,
+    "ref_side": 3,
+    "point": [
+     3.1097,
+     -1.9588,
+     2.6875
+    ],
+    "with": "H5"
+   }
+  ],
+  "H2": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.209,
+    "ref_side": 2,
+    "point": [
+     2.8369,
+     -1.5781,
+     2.5817
+    ],
+    "with": "H3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.42,
+    "ref_side": 1,
+    "point": [
+     2.949,
+     -1.375,
+     2.4845
+    ],
+    "with": "H4"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.52,
+    "ref_side": 0,
+    "point": [
+     3.002,
+     -1.2687,
+     2.4575
+    ],
+    "with": "H1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 3,
+    "point": [
+     3.2529,
+     -0.8243,
+     2.2202
+    ],
+    "with": "H6"
+   }
+  ],
+  "E23": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     5.1132,
+     -1.122,
+     1.1079
+    ],
+    "with": "E5"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.111,
+    "ref_side": 1,
+    "point": [
+     5.2119,
+     -1.0564,
+     0.9919
+    ],
+    "with": "E4"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.556,
+    "ref_side": 1,
+    "point": [
+     5.5832,
+     -0.8101,
+     0.4976
+    ],
+    "with": "E21"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.98,
+    "ref_side": 1,
+    "point": [
+     5.9174,
+     -0.5812,
+     0.011
+    ],
+    "with": "E22"
+   }
+  ],
+  "E22": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.295,
+    "ref_side": 2,
+    "point": [
+     5.9174,
+     -0.5812,
+     0.011
+    ],
+    "with": "E23"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.749,
+    "ref_side": 2,
+    "point": [
+     5.8695,
+     -0.226,
+     0.0124
+    ],
+    "with": "E21"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     5.826,
+     -0.0314,
+     0.0
+    ],
+    "with": "E18"
+   }
+  ],
+  "D1": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.223,
+    "ref_side": 0,
+    "point": [
+     1.8731,
+     1.7189,
+     1.9463
+    ],
+    "with": "D2"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.48,
+    "ref_side": 1,
+    "point": [
+     1.9965,
+     1.9935,
+     2.0061
+    ],
+    "with": "D8"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.622,
+    "ref_side": 0,
+    "point": [
+     2.0571,
+     2.1438,
+     2.0579
+    ],
+    "with": "D3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     2.2394,
+     2.539,
+     2.1346
+    ],
+    "with": "D12"
+   }
+  ],
+  "G8": [
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.0,
+    "ref_side": 1,
+    "point": [
+     2.7723,
+     -1.4913,
+     2.5595
+    ],
+    "with": "H3"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.383,
+    "ref_side": 2,
+    "point": [
+     2.2635,
+     -1.5325,
+     2.5505
+    ],
+    "with": "G7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.49,
+    "ref_side": 1,
+    "point": [
+     2.1267,
+     -1.5594,
+     2.5083
+    ],
+    "with": "G10"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.777,
+    "ref_side": 2,
+    "point": [
+     1.7475,
+     -1.5938,
+     2.4897
+    ],
+    "with": "G9"
+   }
+  ],
+  "G7": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.212,
+    "ref_side": 2,
+    "point": [
+     2.2635,
+     -1.5325,
+     2.5505
+    ],
+    "with": "G8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.436,
+    "ref_side": 1,
+    "point": [
+     2.169,
+     -1.3022,
+     2.482
+    ],
+    "with": "H1"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.577,
+    "ref_side": 2,
+    "point": [
+     2.1119,
+     -1.164,
+     2.42
+    ],
+    "with": "G9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.9425,
+     -0.7553,
+     2.249
+    ],
+    "with": "G1"
+   }
+  ],
+  "A8": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.215,
+    "ref_side": 0,
+    "point": [
+     5.0916,
+     1.5749,
+     0.8279
+    ],
+    "with": "A6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.465,
+    "ref_side": 1,
+    "point": [
+     4.9753,
+     1.4249,
+     0.9149
+    ],
+    "with": "A3"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.585,
+    "ref_side": 0,
+    "point": [
+     4.9267,
+     1.3516,
+     0.9641
+    ],
+    "with": "A7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.988,
+    "ref_side": 1,
+    "point": [
+     4.7336,
+     1.1112,
+     1.0981
+    ],
+    "with": "A9"
+   }
+  ],
+  "A6": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.24,
+    "ref_side": 0,
+    "point": [
+     5.2363,
+     1.2523,
+     0.6577
+    ],
+    "with": "A7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.475,
+    "ref_side": 1,
+    "point": [
+     5.1447,
+     1.4561,
+     0.765
+    ],
+    "with": "A13"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.612,
+    "ref_side": 2,
+    "point": [
+     5.0916,
+     1.5749,
+     0.8279
+    ],
+    "with": "A8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 3,
+    "point": [
+     4.9427,
+     1.9168,
+     1.0154
+    ],
+    "with": "A4"
+   }
+  ],
+  "E20": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.298,
+    "ref_side": 0,
+    "point": [
+     5.3879,
+     -0.0808,
+     0.5403
+    ],
+    "with": "E19"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.634,
+    "ref_side": 1,
+    "point": [
+     5.5803,
+     -0.2253,
+     0.3608
+    ],
+    "with": "E7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     5.7949,
+     -0.3866,
+     0.1638
+    ],
+    "with": "E21"
+   }
+  ],
+  "E21": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.058,
+    "ref_side": 3,
+    "point": [
+     5.8695,
+     -0.226,
+     0.0124
+    ],
+    "with": "E22"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.328,
+    "ref_side": 1,
+    "point": [
+     5.7949,
+     -0.3866,
+     0.1638
+    ],
+    "with": "E20"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     5.5832,
+     -0.8101,
+     0.4976
+    ],
+    "with": "E23"
+   }
+  ],
+  "H6": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.279,
+    "ref_side": 2,
+    "point": [
+     2.9713,
+     -0.8755,
+     2.33
+    ],
+    "with": "H7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.518,
+    "ref_side": 1,
+    "point": [
+     3.2529,
+     -0.8243,
+     2.2202
+    ],
+    "with": "H2"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.627,
+    "ref_side": 0,
+    "point": [
+     3.3779,
+     -0.8018,
+     2.1649
+    ],
+    "with": "H8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 3,
+    "point": [
+     3.7951,
+     -0.7292,
+     1.9667
+    ],
+    "with": "E31"
+   }
+  ],
+  "F3": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.181,
+    "ref_side": 2,
+    "point": [
+     0.0915,
+     -0.3491,
+     1.064
+    ],
+    "with": "F1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.424,
+    "ref_side": 1,
+    "point": [
+     -0.0969,
+     -0.3023,
+     0.8652
+    ],
+    "with": "F4"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.681,
+    "ref_side": 2,
+    "point": [
+     -0.2926,
+     -0.2549,
+     0.6521
+    ],
+    "with": "F2"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     -0.5493,
+     -0.1923,
+     0.3958
+    ],
+    "with": "F15"
+   }
+  ],
+  "F15": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.221,
+    "ref_side": 2,
+    "point": [
+     -0.4962,
+     -0.4434,
+     0.5122
+    ],
+    "with": "F16"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.494,
+    "ref_side": 1,
+    "point": [
+     -0.5493,
+     -0.1923,
+     0.3958
+    ],
+    "with": "F3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     -0.6565,
+     0.2757,
+     0.1628
+    ],
+    "with": "F13"
+   }
+  ],
+  "E2": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.306,
+    "ref_side": 2,
+    "point": [
+     4.5877,
+     -0.8203,
+     1.4706
+    ],
+    "with": "E1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.525,
+    "ref_side": 1,
+    "point": [
+     4.7177,
+     -0.9391,
+     1.4128
+    ],
+    "with": "E34"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.741,
+    "ref_side": 2,
+    "point": [
+     4.8329,
+     -1.0607,
+     1.3396
+    ],
+    "with": "E3"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.987,
+    "ref_side": 1,
+    "point": [
+     4.9711,
+     -1.1966,
+     1.2648
+    ],
+    "with": "E5"
+   }
+  ],
+  "E5": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     4.1089,
+     -1.6422,
+     2.1136
+    ],
+    "with": "H5"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.852,
+    "ref_side": 1,
+    "point": [
+     4.9711,
+     -1.1966,
+     1.2648
+    ],
+    "with": "E2"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     5.1132,
+     -1.122,
+     1.1079
+    ],
+    "with": "E23"
+   }
+  ],
+  "E33": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.212,
+    "ref_side": 0,
+    "point": [
+     4.3561,
+     -1.0965,
+     1.7259
+    ],
+    "with": "E34"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.44,
+    "ref_side": 1,
+    "point": [
+     4.2477,
+     -0.9429,
+     1.7479
+    ],
+    "with": "E1"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.563,
+    "ref_side": 0,
+    "point": [
+     4.1897,
+     -0.8615,
+     1.7636
+    ],
+    "with": "E35"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.988,
+    "ref_side": 1,
+    "point": [
+     3.9929,
+     -0.5745,
+     1.8156
+    ],
+    "with": "E32"
+   }
+  ],
+  "E32": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.164,
+    "ref_side": 0,
+    "point": [
+     3.8612,
+     -0.8257,
+     1.9568
+    ],
+    "with": "E31"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.449,
+    "ref_side": 1,
+    "point": [
+     3.9929,
+     -0.5745,
+     1.8156
+    ],
+    "with": "E33"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.567,
+    "ref_side": 0,
+    "point": [
+     4.0539,
+     -0.4649,
+     1.7716
+    ],
+    "with": "E30"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     4.2462,
+     -0.0944,
+     1.5505
+    ],
+    "with": "E24"
+   }
+  ],
+  "A3": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.244,
+    "ref_side": 2,
+    "point": [
+     4.6522,
+     2.1369,
+     1.2731
+    ],
+    "with": "A1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.507,
+    "ref_side": 1,
+    "point": [
+     4.7666,
+     1.886,
+     1.1479
+    ],
+    "with": "A28"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.604,
+    "ref_side": 0,
+    "point": [
+     4.8101,
+     1.7938,
+     1.1039
+    ],
+    "with": "A4"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     4.9753,
+     1.4249,
+     0.9149
+    ],
+    "with": "A8"
+   }
+  ],
+  "E26": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.189,
+    "ref_side": 0,
+    "point": [
+     4.1825,
+     0.2251,
+     1.5413
+    ],
+    "with": "E25"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.448,
+    "ref_side": 1,
+    "point": [
+     4.0573,
+     -0.008,
+     1.657
+    ],
+    "with": "E28"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.586,
+    "ref_side": 0,
+    "point": [
+     3.9987,
+     -0.1313,
+     1.7296
+    ],
+    "with": "E24"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 3,
+    "point": [
+     3.7969,
+     -0.4973,
+     1.9046
+    ],
+    "with": "E30"
+   }
+  ],
+  "E25": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.264,
+    "ref_side": 2,
+    "point": [
+     4.3565,
+     -0.0777,
+     1.4664
+    ],
+    "with": "E24"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.49,
+    "ref_side": 1,
+    "point": [
+     4.2454,
+     0.1183,
+     1.5168
+    ],
+    "with": "E10"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.614,
+    "ref_side": 2,
+    "point": [
+     4.1825,
+     0.2251,
+     1.5413
+    ],
+    "with": "E26"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.99,
+    "ref_side": 1,
+    "point": [
+     3.9971,
+     0.551,
+     1.6245
+    ],
+    "with": "E27"
+   }
+  ],
+  "D10": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.225,
+    "ref_side": 2,
+    "point": [
+     2.0259,
+     1.1638,
+     1.9924
+    ],
+    "with": "D9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.478,
+    "ref_side": 1,
+    "point": [
+     2.29,
+     1.1464,
+     2.0144
+    ],
+    "with": "G22"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.614,
+    "ref_side": 0,
+    "point": [
+     2.4319,
+     1.1382,
+     2.0178
+    ],
+    "with": "D8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.99,
+    "ref_side": 1,
+    "point": [
+     2.8254,
+     1.1152,
+     2.0139
+    ],
+    "with": "B1"
+   }
+  ],
+  "B1": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.171,
+    "ref_side": 2,
+    "point": [
+     2.691,
+     1.3945,
+     2.0193
+    ],
+    "with": "B3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.449,
+    "ref_side": 1,
+    "point": [
+     2.8254,
+     1.1152,
+     2.0139
+    ],
+    "with": "D10"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.583,
+    "ref_side": 2,
+    "point": [
+     2.8897,
+     0.9808,
+     2.0071
+    ],
+    "with": "B2"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     3.0873,
+     0.5711,
+     1.9962
+    ],
+    "with": "H12"
+   }
+  ],
+  "H7": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.228,
+    "ref_side": 0,
+    "point": [
+     3.2005,
+     -0.4573,
+     2.1358
+    ],
+    "with": "H8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.476,
+    "ref_side": 1,
+    "point": [
+     3.0512,
+     -0.7225,
+     2.246
+    ],
+    "with": "H10"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.623,
+    "ref_side": 0,
+    "point": [
+     2.9713,
+     -0.8755,
+     2.33
+    ],
+    "with": "H6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     2.7422,
+     -1.2726,
+     2.4784
+    ],
+    "with": "H1"
+   }
+  ],
+  "H8": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.227,
+    "ref_side": 2,
+    "point": [
+     3.3779,
+     -0.8018,
+     2.1649
+    ],
+    "with": "H6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.469,
+    "ref_side": 1,
+    "point": [
+     3.261,
+     -0.5729,
+     2.1477
+    ],
+    "with": "E30"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.592,
+    "ref_side": 2,
+    "point": [
+     3.2005,
+     -0.4573,
+     2.1358
+    ],
+    "with": "H7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 3,
+    "point": [
+     3.0064,
+     -0.0806,
+     2.1048
+    ],
+    "with": "H9"
+   }
+  ],
+  "E3": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.142,
+    "ref_side": 0,
+    "point": [
+     4.8329,
+     -1.0607,
+     1.3396
+    ],
+    "with": "E2"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.471,
+    "ref_side": 1,
+    "point": [
+     4.952,
+     -0.7866,
+     1.146
+    ],
+    "with": "E4"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.608,
+    "ref_side": 0,
+    "point": [
+     5.0086,
+     -0.6693,
+     1.0753
+    ],
+    "with": "E1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.971,
+    "ref_side": 1,
+    "point": [
+     5.1402,
+     -0.3681,
+     0.8606
+    ],
+    "with": "E7"
+   }
+  ],
+  "D8": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.156,
+    "ref_side": 2,
+    "point": [
+     2.4319,
+     1.1382,
+     2.0178
+    ],
+    "with": "D10"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.435,
+    "ref_side": 1,
+    "point": [
+     2.2867,
+     1.4235,
+     2.0162
+    ],
+    "with": "B3"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.569,
+    "ref_side": 2,
+    "point": [
+     2.2172,
+     1.5607,
+     2.0104
+    ],
+    "with": "D9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.9965,
+     1.9935,
+     2.0061
+    ],
+    "with": "D1"
+   }
+  ],
+  "A9": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.222,
+    "ref_side": 2,
+    "point": [
+     4.9708,
+     1.0667,
+     0.9095
+    ],
+    "with": "A11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.482,
+    "ref_side": 1,
+    "point": [
+     4.7336,
+     1.1112,
+     1.0981
+    ],
+    "with": "A8"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.624,
+    "ref_side": 0,
+    "point": [
+     4.6019,
+     1.1351,
+     1.1988
+    ],
+    "with": "A10"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     4.2546,
+     1.1975,
+     1.4503
+    ],
+    "with": "A19"
+   }
+  ],
+  "C5": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.196,
+    "ref_side": 0,
+    "point": [
+     0.2994,
+     1.5221,
+     1.0564
+    ],
+    "with": "C4"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.462,
+    "ref_side": 1,
+    "point": [
+     0.199,
+     1.2853,
+     0.9537
+    ],
+    "with": "C2"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.594,
+    "ref_side": 0,
+    "point": [
+     0.1418,
+     1.1667,
+     0.9127
+    ],
+    "with": "C6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.969,
+    "ref_side": 3,
+    "point": [
+     0.0036,
+     0.834,
+     0.764
+    ],
+    "with": "C10"
+   }
+  ],
+  "C6": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.222,
+    "ref_side": 2,
+    "point": [
+     0.1418,
+     1.1667,
+     0.9127
+    ],
+    "with": "C5"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.48,
+    "ref_side": 1,
+    "point": [
+     0.3785,
+     1.1687,
+     1.099
+    ],
+    "with": "F10"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.624,
+    "ref_side": 2,
+    "point": [
+     0.515,
+     1.1705,
+     1.1965
+    ],
+    "with": "C4"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     0.8596,
+     1.1745,
+     1.4512
+    ],
+    "with": "C7"
+   }
+  ],
+  "E29": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.199,
+    "ref_side": 2,
+    "point": [
+     4.0661,
+     0.6595,
+     1.5959
+    ],
+    "with": "E27"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.466,
+    "ref_side": 1,
+    "point": [
+     3.8074,
+     0.6727,
+     1.7187
+    ],
+    "with": "A20"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.61,
+    "ref_side": 0,
+    "point": [
+     3.6666,
+     0.6786,
+     1.7804
+    ],
+    "with": "E28"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     3.2873,
+     0.6938,
+     1.9314
+    ],
+    "with": "H13"
+   }
+  ],
+  "E16": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.306,
+    "ref_side": 2,
+    "point": [
+     5.3748,
+     0.64,
+     0.5031
+    ],
+    "with": "E15"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.607,
+    "ref_side": 1,
+    "point": [
+     5.5293,
+     0.4651,
+     0.3591
+    ],
+    "with": "E13"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     5.724,
+     0.2311,
+     0.1533
+    ],
+    "with": "E17"
+   }
+  ],
+  "E15": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.019,
+    "ref_side": 1,
+    "point": [
+     5.8177,
+     0.6801,
+     0.012
+    ],
+    "with": "A22"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.333,
+    "ref_side": 1,
+    "point": [
+     5.5974,
+     0.66,
+     0.2581
+    ],
+    "with": "A21"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.647,
+    "ref_side": 0,
+    "point": [
+     5.3748,
+     0.64,
+     0.5031
+    ],
+    "with": "E16"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     5.116,
+     0.6183,
+     0.7566
+    ],
+    "with": "E14"
+   }
+  ],
+  "E24": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.247,
+    "ref_side": 2,
+    "point": [
+     3.9987,
+     -0.1313,
+     1.7296
+    ],
+    "with": "E26"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.494,
+    "ref_side": 1,
+    "point": [
+     4.2462,
+     -0.0944,
+     1.5505
+    ],
+    "with": "E32"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.606,
+    "ref_side": 0,
+    "point": [
+     4.3565,
+     -0.0777,
+     1.4664
+    ],
+    "with": "E25"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 3,
+    "point": [
+     4.7303,
+     -0.0217,
+     1.1694
+    ],
+    "with": "E11"
+   }
+  ],
+  "C2": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.241,
+    "ref_side": 0,
+    "point": [
+     -0.2401,
+     1.9931,
+     0.6605
+    ],
+    "with": "C3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.509,
+    "ref_side": 1,
+    "point": [
+     -0.0796,
+     1.7416,
+     0.7604
+    ],
+    "with": "C11"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.635,
+    "ref_side": 2,
+    "point": [
+     -0.0034,
+     1.6235,
+     0.807
+    ],
+    "with": "C1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     0.199,
+     1.2853,
+     0.9537
+    ],
+    "with": "C5"
+   }
+  ],
+  "H9": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.265,
+    "ref_side": 0,
+    "point": [
+     2.8634,
+     -0.3481,
+     2.1845
+    ],
+    "with": "H10"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.513,
+    "ref_side": 1,
+    "point": [
+     3.0064,
+     -0.0806,
+     2.1048
+    ],
+    "with": "H8"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.617,
+    "ref_side": 0,
+    "point": [
+     3.0668,
+     0.0384,
+     2.0936
+    ],
+    "with": "H11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     3.2839,
+     0.4387,
+     1.9551
+    ],
+    "with": "H14"
+   }
+  ],
+  "E6": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.177,
+    "ref_side": 0,
+    "point": [
+     5.0751,
+     -0.1203,
+     0.8678
+    ],
+    "with": "E8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.436,
+    "ref_side": 1,
+    "point": [
+     4.9732,
+     -0.3239,
+     1.0087
+    ],
+    "with": "E11"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.582,
+    "ref_side": 0,
+    "point": [
+     4.9247,
+     -0.4372,
+     1.0962
+    ],
+    "with": "E7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.99,
+    "ref_side": 1,
+    "point": [
+     4.7575,
+     -0.7588,
+     1.3114
+    ],
+    "with": "E1"
+   }
+  ],
+  "G9": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.207,
+    "ref_side": 0,
+    "point": [
+     2.1119,
+     -1.164,
+     2.42
+    ],
+    "with": "G7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.438,
+    "ref_side": 1,
+    "point": [
+     1.8964,
+     -1.4204,
+     2.4592
+    ],
+    "with": "G2"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.596,
+    "ref_side": 2,
+    "point": [
+     1.7475,
+     -1.5938,
+     2.4897
+    ],
+    "with": "G8"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     1.3797,
+     -2.0329,
+     2.5649
+    ],
+    "with": "G14"
+   }
+  ],
+  "B2": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.198,
+    "ref_side": 0,
+    "point": [
+     2.8897,
+     0.9808,
+     2.0071
+    ],
+    "with": "B1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.467,
+    "ref_side": 1,
+    "point": [
+     3.0256,
+     1.233,
+     1.9811
+    ],
+    "with": "H13"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.604,
+    "ref_side": 0,
+    "point": [
+     3.0953,
+     1.3637,
+     1.9919
+    ],
+    "with": "B3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     3.2909,
+     1.7244,
+     1.9352
+    ],
+    "with": "B6"
+   }
+  ],
+  "B6": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.209,
+    "ref_side": 2,
+    "point": [
+     3.0356,
+     1.7736,
+     2.0206
+    ],
+    "with": "B4"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.46,
+    "ref_side": 1,
+    "point": [
+     3.2909,
+     1.7244,
+     1.9352
+    ],
+    "with": "B2"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.589,
+    "ref_side": 0,
+    "point": [
+     3.4195,
+     1.7005,
+     1.8841
+    ],
+    "with": "B5"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 3,
+    "point": [
+     3.8175,
+     1.6263,
+     1.7211
+    ],
+    "with": "A24"
+   }
+  ],
+  "H1": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.222,
+    "ref_side": 2,
+    "point": [
+     3.002,
+     -1.2687,
+     2.4575
+    ],
+    "with": "H2"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.461,
+    "ref_side": 1,
+    "point": [
+     2.7422,
+     -1.2726,
+     2.4784
+    ],
+    "with": "H7"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.58,
+    "ref_side": 0,
+    "point": [
+     2.6135,
+     -1.2783,
+     2.4825
+    ],
+    "with": "H3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     2.169,
+     -1.3022,
+     2.482
+    ],
+    "with": "G7"
+   }
+  ],
+  "F5": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.229,
+    "ref_side": 0,
+    "point": [
+     0.456,
+     -0.0595,
+     1.2687
+    ],
+    "with": "F6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.49,
+    "ref_side": 1,
+    "point": [
+     0.3546,
+     0.1977,
+     1.1458
+    ],
+    "with": "F7"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.592,
+    "ref_side": 2,
+    "point": [
+     0.3166,
+     0.2972,
+     1.0963
+    ],
+    "with": "F4"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     0.157,
+     0.6915,
+     0.9141
+    ],
+    "with": "F10"
+   }
+  ],
+  "G4": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.229,
+    "ref_side": 0,
+    "point": [
+     1.3142,
+     -0.8333,
+     2.0351
+    ],
+    "with": "G5"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.484,
+    "ref_side": 1,
+    "point": [
+     1.2132,
+     -0.5562,
+     1.9082
+    ],
+    "with": "G3"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.596,
+    "ref_side": 2,
+    "point": [
+     1.1704,
+     -0.4362,
+     1.8508
+    ],
+    "with": "G6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     1.0117,
+     -0.0049,
+     1.6578
+    ],
+    "with": "F9"
+   }
+  ],
+  "G11": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.207,
+    "ref_side": 2,
+    "point": [
+     1.9743,
+     -0.2259,
+     2.1427
+    ],
+    "with": "G12"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.475,
+    "ref_side": 1,
+    "point": [
+     2.2562,
+     -0.222,
+     2.1672
+    ],
+    "with": "G1"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.602,
+    "ref_side": 0,
+    "point": [
+     2.3906,
+     -0.2206,
+     2.17
+    ],
+    "with": "G13"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     2.7993,
+     -0.2186,
+     2.1667
+    ],
+    "with": "H10"
+   }
+  ],
+  "G13": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.176,
+    "ref_side": 2,
+    "point": [
+     2.3906,
+     -0.2206,
+     2.17
+    ],
+    "with": "G11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.442,
+    "ref_side": 1,
+    "point": [
+     2.2697,
+     0.0495,
+     2.1152
+    ],
+    "with": "H11"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.569,
+    "ref_side": 2,
+    "point": [
+     2.2126,
+     0.1771,
+     2.0855
+    ],
+    "with": "G12"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     2.0204,
+     0.6052,
+     1.9961
+    ],
+    "with": "G22"
+   }
+  ],
+  "B11": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     1.8796,
+     3.3959,
+     2.2869
+    ],
+    "with": "D15"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.133,
+    "ref_side": 3,
+    "point": [
+     2.0345,
+     3.3694,
+     2.2978
+    ],
+    "with": "D11"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.872,
+    "ref_side": 3,
+    "point": [
+     2.8954,
+     3.2385,
+     2.2838
+    ],
+    "with": "B10"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 0.998,
+    "ref_side": null,
+    "point": [
+     3.0429,
+     3.2185,
+     2.2705
+    ],
+    "with": "A30"
+   }
+  ],
+  "G1": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.214,
+    "ref_side": 2,
+    "point": [
+     1.7675,
+     -1.0547,
+     2.2925
+    ],
+    "with": "G2"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.493,
+    "ref_side": 1,
+    "point": [
+     1.9425,
+     -0.7553,
+     2.249
+    ],
+    "with": "G7"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.597,
+    "ref_side": 0,
+    "point": [
+     2.0018,
+     -0.6383,
+     2.2467
+    ],
+    "with": "G3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     2.2562,
+     -0.222,
+     2.1672
+    ],
+    "with": "G11"
+   }
+  ],
+  "A24": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.245,
+    "ref_side": 2,
+    "point": [
+     3.6856,
+     1.8962,
+     1.801
+    ],
+    "with": "A25"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.502,
+    "ref_side": 1,
+    "point": [
+     3.8175,
+     1.6263,
+     1.7211
+    ],
+    "with": "B6"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.618,
+    "ref_side": 2,
+    "point": [
+     3.8754,
+     1.506,
+     1.6832
+    ],
+    "with": "A23"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     4.0661,
+     1.1145,
+     1.565
+    ],
+    "with": "A20"
+   }
+  ],
+  "E1": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.217,
+    "ref_side": 2,
+    "point": [
+     5.0086,
+     -0.6693,
+     1.0753
+    ],
+    "with": "E3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.483,
+    "ref_side": 1,
+    "point": [
+     4.7575,
+     -0.7588,
+     1.3114
+    ],
+    "with": "E6"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.662,
+    "ref_side": 0,
+    "point": [
+     4.5877,
+     -0.8203,
+     1.4706
+    ],
+    "with": "E2"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     4.2477,
+     -0.9429,
+     1.7479
+    ],
+    "with": "E33"
+   }
+  ],
+  "B7": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.168,
+    "ref_side": 2,
+    "point": [
+     2.6577,
+     2.7271,
+     2.1888
+    ],
+    "with": "B9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.418,
+    "ref_side": 1,
+    "point": [
+     2.788,
+     2.4724,
+     2.1348
+    ],
+    "with": "D12"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.532,
+    "ref_side": 2,
+    "point": [
+     2.8478,
+     2.3561,
+     2.1073
+    ],
+    "with": "B8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     3.0881,
+     1.8879,
+     2.0017
+    ],
+    "with": "B4"
+   }
+  ],
+  "D5": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.204,
+    "ref_side": 0,
+    "point": [
+     0.8073,
+     2.3745,
+     1.5544
+    ],
+    "with": "C22"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.441,
+    "ref_side": 1,
+    "point": [
+     0.8938,
+     2.6633,
+     1.6765
+    ],
+    "with": "D4"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.558,
+    "ref_side": 0,
+    "point": [
+     0.925,
+     2.8066,
+     1.7463
+    ],
+    "with": "C21"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.994,
+    "ref_side": 1,
+    "point": [
+     1.0844,
+     3.3448,
+     1.9561
+    ],
+    "with": "D15"
+   }
+  ],
+  "F2": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.195,
+    "ref_side": 0,
+    "point": [
+     -0.2926,
+     -0.2549,
+     0.6521
+    ],
+    "with": "F3"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.442,
+    "ref_side": 1,
+    "point": [
+     -0.2239,
+     -0.4992,
+     0.8052
+    ],
+    "with": "F16"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.648,
+    "ref_side": 2,
+    "point": [
+     -0.1717,
+     -0.7009,
+     0.9385
+    ],
+    "with": "F1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.998,
+    "ref_side": 1,
+    "point": [
+     -0.0859,
+     -1.0421,
+     1.1689
+    ],
+    "with": "F24"
+   }
+  ],
+  "E30": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.267,
+    "ref_side": 2,
+    "point": [
+     4.0539,
+     -0.4649,
+     1.7716
+    ],
+    "with": "E32"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.505,
+    "ref_side": 1,
+    "point": [
+     3.7969,
+     -0.4973,
+     1.9046
+    ],
+    "with": "E26"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.645,
+    "ref_side": 0,
+    "point": [
+     3.6446,
+     -0.5181,
+     1.9793
+    ],
+    "with": "E31"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     3.261,
+     -0.5729,
+     2.1477
+    ],
+    "with": "H8"
+   }
+  ],
+  "A20": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.234,
+    "ref_side": 0,
+    "point": [
+     4.1914,
+     1.326,
+     1.4934
+    ],
+    "with": "A19"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.479,
+    "ref_side": 1,
+    "point": [
+     4.0661,
+     1.1145,
+     1.565
+    ],
+    "with": "A24"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.6,
+    "ref_side": 0,
+    "point": [
+     4.012,
+     1.0093,
+     1.6111
+    ],
+    "with": "A18"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.99,
+    "ref_side": 1,
+    "point": [
+     3.8074,
+     0.6727,
+     1.7187
+    ],
+    "with": "E29"
+   }
+  ],
+  "C11": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.031,
+    "ref_side": 1,
+    "point": [
+     -0.7976,
+     1.5323,
+     0.0119
+    ],
+    "with": "C14"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.392,
+    "ref_side": 1,
+    "point": [
+     -0.5366,
+     1.6098,
+     0.301
+    ],
+    "with": "C13"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.612,
+    "ref_side": 2,
+    "point": [
+     -0.3653,
+     1.6593,
+     0.4665
+    ],
+    "with": "C12"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 3,
+    "point": [
+     -0.0796,
+     1.7416,
+     0.7604
+    ],
+    "with": "C2"
+   }
+  ],
+  "H4": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.017,
+    "ref_side": 1,
+    "point": [
+     3.3116,
+     -1.8951,
+     2.5745
+    ],
+    "with": "H5"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.986,
+    "ref_side": 1,
+    "point": [
+     2.949,
+     -1.375,
+     2.4845
+    ],
+    "with": "H2"
+   }
+  ],
+  "H5": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     2.9696,
+     -2.0095,
+     2.7519
+    ],
+    "with": "G18"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.119,
+    "ref_side": 1,
+    "point": [
+     3.1097,
+     -1.9588,
+     2.6875
+    ],
+    "with": "H3"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.296,
+    "ref_side": 1,
+    "point": [
+     3.3116,
+     -1.8951,
+     2.5745
+    ],
+    "with": "H4"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.695,
+    "ref_side": 1,
+    "point": [
+     3.7651,
+     -1.7508,
+     2.3157
+    ],
+    "with": "E35"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.874,
+    "ref_side": 1,
+    "point": [
+     3.9694,
+     -1.6833,
+     2.2035
+    ],
+    "with": "E36"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     4.1089,
+     -1.6422,
+     2.1136
+    ],
+    "with": "E5"
+   }
+  ],
+  "F10": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.223,
+    "ref_side": 0,
+    "point": [
+     0.0427,
+     0.454,
+     0.8256
+    ],
+    "with": "F11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.479,
+    "ref_side": 1,
+    "point": [
+     0.157,
+     0.6915,
+     0.9141
+    ],
+    "with": "F5"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.653,
+    "ref_side": 0,
+    "point": [
+     0.231,
+     0.8541,
+     0.9785
+    ],
+    "with": "C10"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     0.3785,
+     1.1687,
+     1.099
+    ],
+    "with": "C6"
+   }
+  ],
+  "E18": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     5.826,
+     -0.0314,
+     0.0
+    ],
+    "with": "E22"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.268,
+    "ref_side": 2,
+    "point": [
+     5.8328,
+     0.1198,
+     0.0127
+    ],
+    "with": "E19"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.694,
+    "ref_side": 2,
+    "point": [
+     5.8205,
+     0.3589,
+     0.0119
+    ],
+    "with": "E17"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     5.7992,
+     0.5299,
+     0.0
+    ],
+    "with": "A22"
+   }
+  ],
+  "G6": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.196,
+    "ref_side": 0,
+    "point": [
+     1.1704,
+     -0.4362,
+     1.8508
+    ],
+    "with": "G4"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.456,
+    "ref_side": 1,
+    "point": [
+     0.9982,
+     -0.6587,
+     1.8203
+    ],
+    "with": "F8"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.613,
+    "ref_side": 0,
+    "point": [
+     0.8867,
+     -0.789,
+     1.8192
+    ],
+    "with": "G5"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     0.6408,
+     -1.1156,
+     1.7628
+    ],
+    "with": "F26"
+   }
+  ],
+  "F26": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.199,
+    "ref_side": 2,
+    "point": [
+     0.8842,
+     -1.1827,
+     1.961
+    ],
+    "with": "G17"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.452,
+    "ref_side": 1,
+    "point": [
+     0.6408,
+     -1.1156,
+     1.7628
+    ],
+    "with": "G6"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.576,
+    "ref_side": 2,
+    "point": [
+     0.5248,
+     -1.0855,
+     1.6589
+    ],
+    "with": "G16"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.998,
+    "ref_side": 1,
+    "point": [
+     0.1261,
+     -0.9791,
+     1.3183
+    ],
+    "with": "F21"
+   }
+  ],
+  "D3": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.194,
+    "ref_side": 2,
+    "point": [
+     2.0571,
+     2.1438,
+     2.0579
+    ],
+    "with": "D1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.458,
+    "ref_side": 1,
+    "point": [
+     1.7835,
+     2.138,
+     1.9677
+    ],
+    "with": "D13"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.579,
+    "ref_side": 0,
+    "point": [
+     1.6598,
+     2.1357,
+     1.9186
+    ],
+    "with": "D2"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.243,
+     2.1281,
+     1.7515
+    ],
+    "with": "D4"
+   }
+  ],
+  "D4": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.205,
+    "ref_side": 2,
+    "point": [
+     1.4201,
+     1.8553,
+     1.7887
+    ],
+    "with": "D7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.474,
+    "ref_side": 1,
+    "point": [
+     1.243,
+     2.1281,
+     1.7515
+    ],
+    "with": "D3"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.598,
+    "ref_side": 2,
+    "point": [
+     1.1633,
+     2.2548,
+     1.7296
+    ],
+    "with": "D6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     0.8938,
+     2.6633,
+     1.6765
+    ],
+    "with": "D5"
+   }
+  ],
+  "B10": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.01,
+    "ref_side": 1,
+    "point": [
+     2.8954,
+     3.2385,
+     2.2838
+    ],
+    "with": "B11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 3,
+    "point": [
+     2.7838,
+     2.7258,
+     2.1832
+    ],
+    "with": "B9"
+   }
+  ],
+  "C14": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     -0.6888,
+     0.7399,
+     0.0
+    ],
+    "with": "F14"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.295,
+    "ref_side": 2,
+    "point": [
+     -0.7376,
+     1.0305,
+     0.0135
+    ],
+    "with": "C13"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.801,
+    "ref_side": 2,
+    "point": [
+     -0.7976,
+     1.5323,
+     0.0119
+    ],
+    "with": "C11"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     -0.8103,
+     1.7316,
+     0.0
+    ],
+    "with": "C25"
+   }
+  ],
+  "C25": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     -0.8103,
+     1.7316,
+     0.0
+    ],
+    "with": "C14"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.327,
+    "ref_side": 2,
+    "point": [
+     -0.9845,
+     2.1419,
+     0.013
+    ],
+    "with": "C24"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.83,
+    "ref_side": 2,
+    "point": [
+     -1.2313,
+     2.7818,
+     0.0116
+    ],
+    "with": "C26"
+   }
+  ],
+  "E11": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.279,
+    "ref_side": 2,
+    "point": [
+     4.5885,
+     0.1512,
+     1.258
+    ],
+    "with": "E10"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.538,
+    "ref_side": 1,
+    "point": [
+     4.7303,
+     -0.0217,
+     1.1694
+    ],
+    "with": "E24"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.646,
+    "ref_side": 2,
+    "point": [
+     4.7876,
+     -0.0942,
+     1.1299
+    ],
+    "with": "E9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.989,
+    "ref_side": 1,
+    "point": [
+     4.9732,
+     -0.3239,
+     1.0087
+    ],
+    "with": "E6"
+   }
+  ],
+  "A30": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     3.0429,
+     3.2185,
+     2.2705
+    ],
+    "with": "B11"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.128,
+    "ref_side": 3,
+    "point": [
+     3.1886,
+     3.163,
+     2.2176
+    ],
+    "with": "B8"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.595,
+    "ref_side": 3,
+    "point": [
+     3.7022,
+     2.976,
+     1.9778
+    ],
+    "with": "A29"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.835,
+    "ref_side": 3,
+    "point": [
+     3.9658,
+     2.879,
+     1.853
+    ],
+    "with": "A27"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     4.1436,
+     2.816,
+     1.7591
+    ],
+    "with": "A5"
+   }
+  ],
+  "C23": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.014,
+    "ref_side": 3,
+    "point": [
+     0.8705,
+     3.3317,
+     1.8612
+    ],
+    "with": "D15"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.988,
+    "ref_side": 1,
+    "point": [
+     0.675,
+     2.7612,
+     1.5737
+    ],
+    "with": "C21"
+   }
+  ],
+  "F8": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.192,
+    "ref_side": 0,
+    "point": [
+     0.7176,
+     0.1561,
+     1.4233
+    ],
+    "with": "F7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.454,
+    "ref_side": 1,
+    "point": [
+     0.8105,
+     -0.1109,
+     1.5518
+    ],
+    "with": "F6"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.599,
+    "ref_side": 2,
+    "point": [
+     0.864,
+     -0.26,
+     1.6206
+    ],
+    "with": "F9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     0.9982,
+     -0.6587,
+     1.8203
+    ],
+    "with": "G6"
+   }
+  ],
+  "A26": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.22,
+    "ref_side": 0,
+    "point": [
+     4.1983,
+     2.4178,
+     1.6307
+    ],
+    "with": "A27"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.443,
+    "ref_side": 1,
+    "point": [
+     4.0884,
+     2.2581,
+     1.6628
+    ],
+    "with": "A29"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.561,
+    "ref_side": 0,
+    "point": [
+     4.0367,
+     2.1706,
+     1.6901
+    ],
+    "with": "A28"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.989,
+    "ref_side": 1,
+    "point": [
+     3.8203,
+     1.8665,
+     1.743
+    ],
+    "with": "A25"
+   }
+  ],
+  "F13": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.076,
+    "ref_side": 3,
+    "point": [
+     -0.8182,
+     0.0351,
+     0.0131
+    ],
+    "with": "F14"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.462,
+    "ref_side": 1,
+    "point": [
+     -0.6565,
+     0.2757,
+     0.1628
+    ],
+    "with": "F15"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.939,
+    "ref_side": 1,
+    "point": [
+     -0.4524,
+     0.5874,
+     0.3163
+    ],
+    "with": "F12"
+   }
+  ],
+  "F12": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.037,
+    "ref_side": 1,
+    "point": [
+     -0.7287,
+     0.586,
+     0.0141
+    ],
+    "with": "F14"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.413,
+    "ref_side": 1,
+    "point": [
+     -0.4524,
+     0.5874,
+     0.3163
+    ],
+    "with": "F13"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.672,
+    "ref_side": 2,
+    "point": [
+     -0.2537,
+     0.5874,
+     0.5155
+    ],
+    "with": "C20"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     -0.0107,
+     0.5866,
+     0.7638
+    ],
+    "with": "F11"
+   }
+  ],
+  "A10": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.302,
+    "ref_side": 2,
+    "point": [
+     4.6019,
+     1.1351,
+     1.1988
+    ],
+    "with": "A9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.55,
+    "ref_side": 1,
+    "point": [
+     4.7292,
+     0.9196,
+     1.0979
+    ],
+    "with": "A18"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.652,
+    "ref_side": 2,
+    "point": [
+     4.7805,
+     0.831,
+     1.055
+    ],
+    "with": "A11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     4.9521,
+     0.5369,
+     0.9142
+    ],
+    "with": "E12"
+   }
+  ],
+  "H10": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.184,
+    "ref_side": 2,
+    "point": [
+     2.6657,
+     0.0478,
+     2.1198
+    ],
+    "with": "H11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.463,
+    "ref_side": 1,
+    "point": [
+     2.7993,
+     -0.2186,
+     2.1667
+    ],
+    "with": "G11"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.598,
+    "ref_side": 2,
+    "point": [
+     2.8634,
+     -0.3481,
+     2.1845
+    ],
+    "with": "H9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     3.0512,
+     -0.7225,
+     2.246
+    ],
+    "with": "H7"
+   }
+  ],
+  "H11": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.23,
+    "ref_side": 2,
+    "point": [
+     3.0668,
+     0.0384,
+     2.0936
+    ],
+    "with": "H9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.477,
+    "ref_side": 1,
+    "point": [
+     2.8086,
+     0.0462,
+     2.115
+    ],
+    "with": "H12"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.613,
+    "ref_side": 0,
+    "point": [
+     2.6657,
+     0.0478,
+     2.1198
+    ],
+    "with": "H10"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.99,
+    "ref_side": 1,
+    "point": [
+     2.2697,
+     0.0495,
+     2.1152
+    ],
+    "with": "G13"
+   }
+  ],
+  "E4": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.0,
+    "ref_side": 1,
+    "point": [
+     5.2119,
+     -1.0564,
+     0.9919
+    ],
+    "with": "E23"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.935,
+    "ref_side": 1,
+    "point": [
+     4.952,
+     -0.7866,
+     1.146
+    ],
+    "with": "E3"
+   }
+  ],
+  "F7": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.175,
+    "ref_side": 2,
+    "point": [
+     1.0712,
+     0.1146,
+     1.6856
+    ],
+    "with": "F9"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.439,
+    "ref_side": 1,
+    "point": [
+     0.8349,
+     0.1431,
+     1.5172
+    ],
+    "with": "G19"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.576,
+    "ref_side": 2,
+    "point": [
+     0.7176,
+     0.1561,
+     1.4233
+    ],
+    "with": "F8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     0.3546,
+     0.1977,
+     1.1458
+    ],
+    "with": "F5"
+   }
+  ],
+  "F24": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.178,
+    "ref_side": 0,
+    "point": [
+     0.1042,
+     -0.8738,
+     1.2551
+    ],
+    "with": "F21"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.408,
+    "ref_side": 1,
+    "point": [
+     -0.0859,
+     -1.0421,
+     1.1689
+    ],
+    "with": "F2"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.576,
+    "ref_side": 0,
+    "point": [
+     -0.2338,
+     -1.1606,
+     1.1166
+    ],
+    "with": "F22"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.988,
+    "ref_side": 1,
+    "point": [
+     -0.574,
+     -1.4644,
+     0.9615
+    ],
+    "with": "F20"
+   }
+  ],
+  "F20": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.021,
+    "ref_side": 1,
+    "point": [
+     -1.2803,
+     -1.0912,
+     0.0118
+    ],
+    "with": "F18"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.479,
+    "ref_side": 1,
+    "point": [
+     -0.8967,
+     -1.2868,
+     0.5458
+    ],
+    "with": "F19"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.85,
+    "ref_side": 1,
+    "point": [
+     -0.574,
+     -1.4644,
+     0.9615
+    ],
+    "with": "F24"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     -0.4357,
+     -1.5385,
+     1.1216
+    ],
+    "with": "F25"
+   }
+  ],
+  "E17": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.066,
+    "ref_side": 3,
+    "point": [
+     5.8205,
+     0.3589,
+     0.0119
+    ],
+    "with": "E18"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.41,
+    "ref_side": 1,
+    "point": [
+     5.724,
+     0.2311,
+     0.1533
+    ],
+    "with": "E16"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     5.5456,
+     -0.0106,
+     0.3609
+    ],
+    "with": "E19"
+   }
+  ],
+  "F23": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.042,
+    "ref_side": 1,
+    "point": [
+     -0.2821,
+     -1.591,
+     1.2855
+    ],
+    "with": "F25"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     0.0452,
+     -1.2316,
+     1.3662
+    ],
+    "with": "F22"
+   }
+  ],
+  "F22": [
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.0,
+    "ref_side": 1,
+    "point": [
+     0.5997,
+     -1.3537,
+     1.8393
+    ],
+    "with": "G16"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.372,
+    "ref_side": 2,
+    "point": [
+     0.1863,
+     -1.2657,
+     1.489
+    ],
+    "with": "F21"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.505,
+    "ref_side": 1,
+    "point": [
+     0.0452,
+     -1.2316,
+     1.3662
+    ],
+    "with": "F23"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.771,
+    "ref_side": 0,
+    "point": [
+     -0.2338,
+     -1.1606,
+     1.1166
+    ],
+    "with": "F24"
+   }
+  ],
+  "D12": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.23,
+    "ref_side": 2,
+    "point": [
+     1.9892,
+     2.5746,
+     2.1168
+    ],
+    "with": "D13"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.465,
+    "ref_side": 1,
+    "point": [
+     2.2394,
+     2.539,
+     2.1346
+    ],
+    "with": "D1"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.671,
+    "ref_side": 0,
+    "point": [
+     2.4592,
+     2.512,
+     2.1362
+    ],
+    "with": "D11"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.979,
+    "ref_side": 1,
+    "point": [
+     2.788,
+     2.4724,
+     2.1348
+    ],
+    "with": "B7"
+   }
+  ],
+  "A19": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.21,
+    "ref_side": 2,
+    "point": [
+     4.3657,
+     0.9652,
+     1.3675
+    ],
+    "with": "A18"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.456,
+    "ref_side": 1,
+    "point": [
+     4.2546,
+     1.1975,
+     1.4503
+    ],
+    "with": "A9"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.593,
+    "ref_side": 2,
+    "point": [
+     4.1914,
+     1.326,
+     1.4934
+    ],
+    "with": "A20"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 3,
+    "point": [
+     4.0121,
+     1.7006,
+     1.6271
+    ],
+    "with": "A23"
+   }
+  ],
+  "A12": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.242,
+    "ref_side": 2,
+    "point": [
+     5.404,
+     1.3978,
+     0.5069
+    ],
+    "with": "A13"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.551,
+    "ref_side": 1,
+    "point": [
+     5.5305,
+     1.1576,
+     0.3602
+    ],
+    "with": "A7"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 3,
+    "point": [
+     5.7166,
+     0.7997,
+     0.1395
+    ],
+    "with": "A21"
+   }
+  ],
+  "E35": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.131,
+    "ref_side": 2,
+    "point": [
+     4.1897,
+     -0.8615,
+     1.7636
+    ],
+    "with": "E33"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.385,
+    "ref_side": 1,
+    "point": [
+     4.0671,
+     -1.12,
+     1.9322
+    ],
+    "with": "E31"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.506,
+    "ref_side": 0,
+    "point": [
+     4.0179,
+     -1.2424,
+     2.0207
+    ],
+    "with": "E34"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.995,
+    "ref_side": 1,
+    "point": [
+     3.7651,
+     -1.7508,
+     2.3157
+    ],
+    "with": "H5"
+   }
+  ],
+  "E34": [
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.016,
+    "ref_side": 3,
+    "point": [
+     4.7177,
+     -0.9391,
+     1.4128
+    ],
+    "with": "E2"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.403,
+    "ref_side": 0,
+    "point": [
+     4.3561,
+     -1.0965,
+     1.7259
+    ],
+    "with": "E33"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.521,
+    "ref_side": 1,
+    "point": [
+     4.256,
+     -1.1495,
+     1.8289
+    ],
+    "with": "E36"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.766,
+    "ref_side": 0,
+    "point": [
+     4.0179,
+     -1.2424,
+     2.0207
+    ],
+    "with": "E35"
+   }
+  ],
+  "F25": [
+   {
+    "type": "LMiterJoint",
+    "role": "b",
+    "t": 0.0,
+    "ref_side": null,
+    "point": [
+     -0.4357,
+     -1.5385,
+     1.1216
+    ],
+    "with": "F20"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "cross",
+    "t": 0.153,
+    "ref_side": 1,
+    "point": [
+     -0.2821,
+     -1.591,
+     1.2855
+    ],
+    "with": "F23"
+   },
+   {
+    "type": "LMiterJoint",
+    "role": "a",
+    "t": 1.0,
+    "ref_side": null,
+    "point": [
+     0.6099,
+     -1.9106,
+     2.1352
+    ],
+    "with": "G14"
+   }
+  ],
+  "H14": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.211,
+    "ref_side": 2,
+    "point": [
+     3.0243,
+     0.4394,
+     2.0429
+    ],
+    "with": "H12"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.465,
+    "ref_side": 1,
+    "point": [
+     3.2839,
+     0.4387,
+     1.9551
+    ],
+    "with": "H9"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.592,
+    "ref_side": 0,
+    "point": [
+     3.4101,
+     0.4385,
+     1.9056
+    ],
+    "with": "H13"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     3.8052,
+     0.4368,
+     1.7392
+    ],
+    "with": "E28"
+   }
+  ],
+  "C18": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.0,
+    "ref_side": 1,
+    "point": [
+     -0.4693,
+     3.0388,
+     0.8331
+    ],
+    "with": "C26"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.969,
+    "ref_side": 1,
+    "point": [
+     -0.0097,
+     2.5179,
+     1.0144
+    ],
+    "with": "C15"
+   }
+  ],
+  "H13": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.194,
+    "ref_side": 2,
+    "point": [
+     3.4101,
+     0.4385,
+     1.9056
+    ],
+    "with": "H14"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.45,
+    "ref_side": 1,
+    "point": [
+     3.2873,
+     0.6938,
+     1.9314
+    ],
+    "with": "E29"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.582,
+    "ref_side": 2,
+    "point": [
+     3.2228,
+     0.825,
+     1.9411
+    ],
+    "with": "H12"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     3.0256,
+     1.233,
+     1.9811
+    ],
+    "with": "B2"
+   }
+  ],
+  "C17": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.22,
+    "ref_side": 2,
+    "point": [
+     0.3737,
+     2.4435,
+     1.2774
+    ],
+    "with": "C16"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.485,
+    "ref_side": 1,
+    "point": [
+     0.1781,
+     2.6722,
+     1.2109
+    ],
+    "with": "C21"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.661,
+    "ref_side": 2,
+    "point": [
+     0.051,
+     2.8262,
+     1.1617
+    ],
+    "with": "C15"
+   },
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.998,
+    "ref_side": 1,
+    "point": [
+     -0.1961,
+     3.1184,
+     1.0742
+    ],
+    "with": "C19"
+   }
+  ],
+  "E19": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.031,
+    "ref_side": 1,
+    "point": [
+     5.8328,
+     0.1198,
+     0.0127
+    ],
+    "with": "E18"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.435,
+    "ref_side": 1,
+    "point": [
+     5.5456,
+     -0.0106,
+     0.3609
+    ],
+    "with": "E17"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.65,
+    "ref_side": 2,
+    "point": [
+     5.3879,
+     -0.0808,
+     0.5403
+    ],
+    "with": "E20"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.992,
+    "ref_side": 1,
+    "point": [
+     5.1352,
+     -0.1918,
+     0.8249
+    ],
+    "with": "E8"
+   }
+  ],
+  "H12": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.185,
+    "ref_side": 0,
+    "point": [
+     3.2228,
+     0.825,
+     1.9411
+    ],
+    "with": "H13"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.448,
+    "ref_side": 1,
+    "point": [
+     3.0873,
+     0.5711,
+     1.9962
+    ],
+    "with": "B1"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.584,
+    "ref_side": 0,
+    "point": [
+     3.0243,
+     0.4394,
+     2.0429
+    ],
+    "with": "H14"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     2.8086,
+     0.0462,
+     2.115
+    ],
+    "with": "H11"
+   }
+  ],
+  "E12": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.21,
+    "ref_side": 0,
+    "point": [
+     5.0598,
+     0.7133,
+     0.8058
+    ],
+    "with": "E14"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.46,
+    "ref_side": 1,
+    "point": [
+     4.9521,
+     0.5369,
+     0.9142
+    ],
+    "with": "A10"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.587,
+    "ref_side": 0,
+    "point": [
+     4.9068,
+     0.448,
+     0.9778
+    ],
+    "with": "E13"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.989,
+    "ref_side": 1,
+    "point": [
+     4.7271,
+     0.1644,
+     1.1455
+    ],
+    "with": "E10"
+   }
+  ],
+  "F21": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.204,
+    "ref_side": 2,
+    "point": [
+     0.1863,
+     -1.2657,
+     1.489
+    ],
+    "with": "F22"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.484,
+    "ref_side": 1,
+    "point": [
+     0.1261,
+     -0.9791,
+     1.3183
+    ],
+    "with": "F26"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.587,
+    "ref_side": 2,
+    "point": [
+     0.1042,
+     -0.8738,
+     1.2551
+    ],
+    "with": "F24"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.985,
+    "ref_side": 1,
+    "point": [
+     0.0121,
+     -0.4629,
+     1.0195
+    ],
+    "with": "F1"
+   }
+  ],
+  "G17": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.239,
+    "ref_side": 0,
+    "point": [
+     0.6666,
+     -1.4724,
+     1.9388
+    ],
+    "with": "G16"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.453,
+    "ref_side": 1,
+    "point": [
+     0.813,
+     -1.2861,
+     1.9475
+    ],
+    "with": "G15"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.567,
+    "ref_side": 0,
+    "point": [
+     0.8842,
+     -1.1827,
+     1.961
+    ],
+    "with": "F26"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     1.177,
+     -0.8181,
+     1.9726
+    ],
+    "with": "G5"
+   }
+  ],
+  "G5": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.217,
+    "ref_side": 2,
+    "point": [
+     0.8867,
+     -0.789,
+     1.8192
+    ],
+    "with": "G6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.491,
+    "ref_side": 1,
+    "point": [
+     1.177,
+     -0.8181,
+     1.9726
+    ],
+    "with": "G17"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.617,
+    "ref_side": 2,
+    "point": [
+     1.3142,
+     -0.8333,
+     2.0351
+    ],
+    "with": "G4"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.975,
+    "ref_side": 1,
+    "point": [
+     1.7042,
+     -0.8764,
+     2.2134
+    ],
+    "with": "G2"
+   }
+  ],
+  "A29": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.005,
+    "ref_side": 1,
+    "point": [
+     3.7022,
+     2.976,
+     1.9778
+    ],
+    "with": "A30"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.989,
+    "ref_side": 1,
+    "point": [
+     4.0884,
+     2.2581,
+     1.6628
+    ],
+    "with": "A26"
+   }
+  ],
+  "E28": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.212,
+    "ref_side": 2,
+    "point": [
+     3.6666,
+     0.6786,
+     1.7804
+    ],
+    "with": "E29"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.486,
+    "ref_side": 1,
+    "point": [
+     3.8052,
+     0.4368,
+     1.7392
+    ],
+    "with": "H14"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.609,
+    "ref_side": 2,
+    "point": [
+     3.8657,
+     0.328,
+     1.7173
+    ],
+    "with": "E27"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.99,
+    "ref_side": 1,
+    "point": [
+     4.0573,
+     -0.008,
+     1.657
+    ],
+    "with": "E26"
+   }
+  ],
+  "E31": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.246,
+    "ref_side": 2,
+    "point": [
+     3.6446,
+     -0.5181,
+     1.9793
+    ],
+    "with": "E30"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.512,
+    "ref_side": 1,
+    "point": [
+     3.7951,
+     -0.7292,
+     1.9667
+    ],
+    "with": "H6"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.632,
+    "ref_side": 2,
+    "point": [
+     3.8612,
+     -0.8257,
+     1.9568
+    ],
+    "with": "E32"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     4.0671,
+     -1.12,
+     1.9322
+    ],
+    "with": "E35"
+   }
+  ],
+  "G15": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.011,
+    "ref_side": 1,
+    "point": [
+     1.053,
+     -1.9805,
+     2.3855
+    ],
+    "with": "G14"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.989,
+    "ref_side": 1,
+    "point": [
+     0.813,
+     -1.2861,
+     1.9475
+    ],
+    "with": "G17"
+   }
+  ],
+  "G19": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.18,
+    "ref_side": 0,
+    "point": [
+     1.2461,
+     0.8914,
+     1.6808
+    ],
+    "with": "G21"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.448,
+    "ref_side": 1,
+    "point": [
+     1.1111,
+     0.6436,
+     1.6244
+    ],
+    "with": "C7"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.589,
+    "ref_side": 0,
+    "point": [
+     1.0333,
+     0.5142,
+     1.6116
+    ],
+    "with": "G20"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     0.8349,
+     0.1431,
+     1.5172
+    ],
+    "with": "F7"
+   }
+  ],
+  "E36": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.018,
+    "ref_side": 3,
+    "point": [
+     3.9694,
+     -1.6833,
+     2.2035
+    ],
+    "with": "H5"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 3,
+    "point": [
+     4.256,
+     -1.1495,
+     1.8289
+    ],
+    "with": "E34"
+   }
+  ],
+  "A21": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.099,
+    "ref_side": 3,
+    "point": [
+     5.8272,
+     0.9097,
+     0.0128
+    ],
+    "with": "A22"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.525,
+    "ref_side": 1,
+    "point": [
+     5.7166,
+     0.7997,
+     0.1395
+    ],
+    "with": "A12"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.989,
+    "ref_side": 1,
+    "point": [
+     5.5974,
+     0.66,
+     0.2581
+    ],
+    "with": "E15"
+   }
+  ],
+  "F4": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.195,
+    "ref_side": 0,
+    "point": [
+     0.3166,
+     0.2972,
+     1.0963
+    ],
+    "with": "F5"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.468,
+    "ref_side": 1,
+    "point": [
+     0.1748,
+     0.0933,
+     1.0104
+    ],
+    "with": "F11"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.601,
+    "ref_side": 0,
+    "point": [
+     0.1027,
+     -0.0084,
+     0.9825
+    ],
+    "with": "F6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.99,
+    "ref_side": 1,
+    "point": [
+     -0.0969,
+     -0.3023,
+     0.8652
+    ],
+    "with": "F3"
+   }
+  ],
+  "C13": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.011,
+    "ref_side": 3,
+    "point": [
+     -0.7376,
+     1.0305,
+     0.0135
+    ],
+    "with": "C14"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.446,
+    "ref_side": 1,
+    "point": [
+     -0.6496,
+     1.302,
+     0.1554
+    ],
+    "with": "C20"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.936,
+    "ref_side": 1,
+    "point": [
+     -0.5366,
+     1.6098,
+     0.301
+    ],
+    "with": "C11"
+   }
+  ],
+  "B3": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.218,
+    "ref_side": 2,
+    "point": [
+     3.0953,
+     1.3637,
+     1.9919
+    ],
+    "with": "B2"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.477,
+    "ref_side": 1,
+    "point": [
+     2.8245,
+     1.3851,
+     2.0152
+    ],
+    "with": "B4"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.604,
+    "ref_side": 0,
+    "point": [
+     2.691,
+     1.3945,
+     2.0193
+    ],
+    "with": "B1"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.99,
+    "ref_side": 1,
+    "point": [
+     2.2867,
+     1.4235,
+     2.0162
+    ],
+    "with": "D8"
+   }
+  ],
+  "B4": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.235,
+    "ref_side": 2,
+    "point": [
+     3.2026,
+     2.1062,
+     1.9957
+    ],
+    "with": "B5"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.464,
+    "ref_side": 1,
+    "point": [
+     3.0881,
+     1.8879,
+     2.0017
+    ],
+    "with": "B7"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.581,
+    "ref_side": 0,
+    "point": [
+     3.0356,
+     1.7736,
+     2.0206
+    ],
+    "with": "B6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.991,
+    "ref_side": 1,
+    "point": [
+     2.8245,
+     1.3851,
+     2.0152
+    ],
+    "with": "B3"
+   }
+  ],
+  "B5": [
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.203,
+    "ref_side": 2,
+    "point": [
+     3.4195,
+     1.7005,
+     1.8841
+    ],
+    "with": "B6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.459,
+    "ref_side": 1,
+    "point": [
+     3.275,
+     1.9834,
+     1.9631
+    ],
+    "with": "A25"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "b",
+    "t": 0.574,
+    "ref_side": 0,
+    "point": [
+     3.2026,
+     2.1062,
+     1.9957
+    ],
+    "with": "B4"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     2.9473,
+     2.573,
+     2.1314
+    ],
+    "with": "B8"
+   }
+  ],
+  "F11": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.237,
+    "ref_side": 0,
+    "point": [
+     -0.1036,
+     0.8234,
+     0.6516
+    ],
+    "with": "C10"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.485,
+    "ref_side": 1,
+    "point": [
+     -0.0107,
+     0.5866,
+     0.7638
+    ],
+    "with": "F12"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.624,
+    "ref_side": 2,
+    "point": [
+     0.0427,
+     0.454,
+     0.8256
+    ],
+    "with": "F10"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     0.1748,
+     0.0933,
+     1.0104
+    ],
+    "with": "F4"
+   }
+  ],
+  "D14": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.008,
+    "ref_side": 1,
+    "point": [
+     1.6746,
+     3.3807,
+     2.2088
+    ],
+    "with": "D15"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 3,
+    "point": [
+     2.0285,
+     2.6801,
+     2.1255
+    ],
+    "with": "D13"
+   }
+  ],
+  "A7": [
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.18,
+    "ref_side": 2,
+    "point": [
+     4.9267,
+     1.3516,
+     0.9641
+    ],
+    "with": "A8"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "cross",
+    "t": 0.453,
+    "ref_side": 1,
+    "point": [
+     5.1368,
+     1.2844,
+     0.759
+    ],
+    "with": "A11"
+   },
+   {
+    "type": "XLapJoint",
+    "role": "a",
+    "t": 0.586,
+    "ref_side": 2,
+    "point": [
+     5.2363,
+     1.2523,
+     0.6577
+    ],
+    "with": "A6"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 0.975,
+    "ref_side": 3,
+    "point": [
+     5.5305,
+     1.1576,
+     0.3602
+    ],
+    "with": "A12"
+   }
+  ],
+  "F19": [
+   {
+    "type": "PreferredFaceTButtJoint",
+    "role": "main",
+    "t": 0.0,
+    "ref_side": 1,
+    "point": [
+     -0.8967,
+     -1.2868,
+     0.5458
+    ],
+    "with": "F20"
+   },
+   {
+    "type": "TButtJoint",
+    "role": "main",
+    "t": 1.0,
+    "ref_side": 1,
+    "point": [
+     -0.9501,
+     -0.6988,
+     0.1808
+    ],
+    "with": "F17"
+   }
+  ]
+ }
+}

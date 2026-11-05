@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="data:,"><title>Hardleaf · Spatial comparison</title>
+<link rel="stylesheet" href="style.css"><script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/addons/"}}</script></head>
+<body>
+<main id="viewport" aria-label="Hardleaf 3D model"></main>
+<header><div class="mark">HARDLEAF / SPATIAL DECISIONS</div><h1>See what changes.</h1><p>Same scale. Same sun. Different choices.</p></header>
+<div id="regionBar" hidden role="status"><span id="regionText"></span><button type="button" id="regionConfirm">Confirm</button><button type="button" id="regionCancel">Cancel</button></div>
+<div id="diffPick" hidden aria-label="What to compare"><b>Compare</b><label><input type="checkbox" data-metric="area" checked> Area</label><label><input type="checkbox" data-metric="shade" checked> Shade</label><label><input type="checkbox" data-metric="height" checked> Height</label><label><input type="checkbox" data-metric="material" checked> Timber</label><b>Shade in</b><label><input type="radio" name="scope" value="seat" checked> <span id="scopeSeat">Seating zone</span></label><label><input type="radio" name="scope" value="ground"> Whole ground</label><label><input type="radio" name="scope" value="region" id="scopeRegion" disabled> <span id="scopeRegionText">Selected region (none yet)</span></label><small>Click two ground cells to select a region.</small></div>
+<div class="workspace-tools"><button id="fitModels">Fit models</button><button id="advancedToggle" aria-expanded="false">Intent &amp; records</button></div>
+<section id="comparisonControls" aria-label="Compare designs">
+  <div class="model-pickers"><label class="a"><span>A / CURRENT</span><select id="scenario"></select></label><span class="versus">↔</span><label class="b"><span>B / REFERENCE</span><select id="reference"></select></label></div>
+  <div class="layout-controls"><div class="segmented"><button data-compare-mode="single">Single</button><button data-compare-mode="beside" class="active">Beside</button><button data-compare-mode="overlay">Overlap</button></div><label class="inline"><input id="localOverlap" type="checkbox">Local overlap</label><label class="inline ghost-label">Ghost <input id="ghostOpacity" type="range" min="0.1" max="0.75" step="0.05" value="0.28" aria-label="Reference ghost opacity"></label><label class="inline"><input id="diffOnly" type="checkbox">Only what changed</label></div>
+</section>
+<section id="comparisonDock" aria-label="Visual comparison lenses">
+  <div class="segmented tier-tabs" id="tierTabs" role="group" aria-label="Decision level"><button type="button" data-tier="whole" class="active">Whole strategy</button><button type="button" data-tier="local">Local change</button><button type="button" data-tier="member">Single member</button></div>
+  <div class="dock-top"><span id="stockIdentity">Same timber pieces</span><button id="diffPickBtn" type="button" aria-expanded="false">Compare…</button><button id="shadePeriod">Whole day</button><button id="allFocus" class="active">Show all</button></div>
+  <div class="lenses">
+    <button data-focus="area"><span class="lens-name">▱ &nbsp;Area</span><span class="delta"></span><span class="pair"></span></button>
+    <button data-focus="shade"><span class="lens-name">◐ &nbsp;Shade</span><span class="delta"></span><span class="pair"></span></button>
+    <button data-focus="height"><span class="lens-name">↕ &nbsp;Height</span><span class="delta"></span><span class="pair"></span></button>
+    <button data-focus="material"><span class="lens-name">≋ &nbsp;Timber</span><span class="delta"></span><span class="pair"></span></button>
+  </div>
+  <div class="comparison-story"><span class="story-dot"></span><div><h2 id="compareHeadline"></h2><p id="compareWhy"></p></div></div>
+  <div class="light-scale" id="lightScale" aria-hidden="true"></div><p class="comparison-legend" id="lightLegend"></p><p class="comparison-legend" id="comparisonLegend"></p><small id="compareContext"></small>
+</section>
+<aside id="panel" hidden>
+<div class="eyebrow" id="flowEyebrow">Step 1 of 7</div><h2 id="flowTitle">Intention</h2>
+<div id="flowChart"></div>
+<p id="flowAsk" class="flow-ask"></p>
+<p class="muted" data-step="1">Real beam geometry, assumed use. Bare-timber shade only; plants, weather and structure are not included.</p>
+<details open data-step="1"><summary>Intention · goal roles (click to change)</summary><div id="intent" class="buttonrow" style="flex-wrap:wrap"></div></details>
+<details open data-step="1"><summary>Conditions · what is assumed</summary><div id="conditions"></div></details>
+<label data-step="1">People (assumed: 1.5 m² each)<select id="usage"></select></label>
+<label data-step="1">Shade target <output id="targetValue">50%</output><input id="target" type="range" min="10" max="90" step="5" value="50"></label>
+<label data-step="3">Simulated time <output id="hourValue">13:00</output><input id="hour" type="range" min="0" max="7" step="1" value="3"></label>
+<div class="buttonrow" data-step="2"><button id="rackToggle">Show timber stock rack</button></div>
+<div class="buttonrow" data-step="3"><button id="home">Reset view</button><button id="seatview">Seat zone from above</button><button id="columns">Light filter: off</button><button id="cells">Hide per-cell shade</button></div>
+<div class="buttonrow" data-step="6"><button id="compare">Side by side</button></div>
+<nav data-step="4 6" aria-label="Information level"><button data-level="1" class="active">L1 Overview</button><button data-level="2">L2 Differences</button><button data-level="3">L3 Explain</button></nav>
+<section id="feedback" data-step="4 6" aria-live="polite"></section>
+<section id="command" data-step="5"><label for="cmdText"><small>Ask for an option (needs the bridge): turn 90 · wider 10 · lower 15 · remove A1 A2 · reset</small></label><div style="display:flex;gap:6px;margin-top:4px"><input id="cmdText" type="text" placeholder="turn 90 and lower 10" style="flex:1;min-width:0"><button id="cmdGo" type="button">Go</button><button id="cmdVoice" type="button" hidden>Speak</button></div><small id="cmdStatus"></small></section>
+<section id="selection" data-step="2 4"><small>Click a timber member to see its details</small></section>
+<details data-step="5"><summary>Engineering connection</summary><p>Rhino geometry probe. Structure and joinery remain unchecked.</p><button id="testEngine">Test Rhino link</button><p id="engineStatus">Not tested</p><a href="device.html" target="_blank">Quest connection diagnostics</a></details>
+<div id="taskbox" data-step="7"><small>Task</small><p id="task">Choose a configuration for this seating zone: enough shade from the timber you have. Compare two, pick the one you would use, and say why.</p></div>
+<label data-step="7">Preference for the current configuration<select id="pref"><option value="">not rated</option><option value="1">1 very dissatisfied</option><option value="2">2</option><option value="3">3 neutral</option><option value="4">4</option><option value="5">5 very satisfied</option></select></label>
+<label data-step="7">Reason for choosing / returning (optional)<textarea id="rationale" rows="2" placeholder="e.g. local exposure still too large, go back and change the goal. Left empty, no reason is inferred."></textarea></label>
+<div class="buttonrow" data-step="7"><button id="record">Record this decision</button><button id="export">Export record</button></div>
+<div class="flow-nav"><button id="flowPrev" type="button">Back</button><button id="flowNext" type="button">Next</button></div>
+<details><summary>History · return and branch</summary><label>Choose a recorded state<select id="historyState"></select></label><button id="restore">Restore this state and open a new branch</button><p><b>Decisions across strategies</b></p><table id="decisions"></table><p id="historySummary">No history yet</p><p>After returning you can keep exploring; the old branch, goal, option and record are not overwritten.</p></details>
+<p id="status" role="status">Reading 182 beams…</p>
+<details><summary>Sources and controls</summary><p>Mouse: rotate; wheel: zoom; click: pick a beam. VR In VR use the controller ray to pick members and the console in front of you. Stand and walk inside your real boundary.</p><p>From the course: Alpine ARchitecture  Lock → Mark → Assign → Check; here: confirm conditions → mark the conflict → compare → decide.</p><a href="docs/SOURCES.md">Data and sources</a></details>
+</aside>
+<div id="walkPad" aria-label="Walk"><div class="wp-keys"><span></span><button type="button" data-walk="KeyW" aria-label="Forward">W</button><span></span><button type="button" data-walk="KeyA" aria-label="Left">A</button><button type="button" data-walk="KeyS" aria-label="Back">S</button><button type="button" data-walk="KeyD" aria-label="Right">D</button></div><button type="button" id="walkIn">Walk in</button><small>Shift = faster · drag = look</small></div>
+<section id="historyStrip" aria-label="Decision history"><div class="hs-head"><b>Decisions</b><small id="hsCount"></small><div class="hs-tabs"><button type="button" id="hsStrip" aria-pressed="true">Strip</button><button type="button" id="hsTree" aria-pressed="false">Tree</button><button type="button" id="hsHide" aria-expanded="true">Hide</button></div></div><div id="hsBody"></div></section>
+<footer><span class="badge">Research prototype</span><span>1:1 metres · assumed site &amp; use · structure not checked</span></footer>
+<script type="module" src="app.js"></script></body></html>
