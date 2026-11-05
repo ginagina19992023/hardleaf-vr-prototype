@@ -56,3 +56,14 @@ aside{z-index:1000}.walking #comparisonDock,.walking #comparisonControls,.walkin
 .tier-tabs{display:inline-flex;margin-bottom:8px}#diffPick{bottom:calc(var(--hist-h,0px) + 300px)}
 #dockSummary{display:none;font-weight:600;font-size:13px;margin-right:auto;min-width:0}#comparisonDock.collapsed{width:auto;max-width:min(760px,calc(100vw - 60px));padding:8px 12px}#comparisonDock.collapsed>*:not(.tier-tabs):not(.dock-top){display:none}#comparisonDock.collapsed #stockIdentity,#comparisonDock.collapsed #allFocus{display:none}#comparisonDock.collapsed #dockSummary{display:block}#comparisonDock.collapsed .tier-tabs{margin-bottom:6px}
 #diffPick{bottom:calc(var(--hist-h,0px) + var(--dock-h,0px) + 22px)!important}
+/* Legibility and fit (5 Nov): nothing below 12px in the comparison panel, solid background over the model, and every panel stays inside the window. */
+#comparisonDock{background:#fbfcf7fa;max-height:calc(100vh - var(--hist-h,0px) - 28px);overflow:auto;color:#203329}
+.lens-name{font-size:13px}.delta{font-size:22px}.pair{font-size:12px;color:#3a4a40;white-space:normal}.lenses{grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}.lenses button.major:after{font-size:10px;color:#2f5d46}
+.comparison-legend{font-size:13px;color:#2f3f35;line-height:1.4}#compareContext{font-size:12px;color:#3a4a40;display:block;line-height:1.4}#compareWhy{font-size:13px;color:#2f3f35}
+.dock-top{flex-wrap:wrap}.dock-top>span{font-size:13px;color:#2f3f35}.dock-top button{font-size:12px}.tier-tabs button{font-size:13px}#dockSummary{font-size:14px;color:#203329}
+.hs-head{font-size:13px}.hs-head small{font-size:12px;color:#3a4a40}.hs-tabs button{font-size:12px}.hs-text b{font-size:12px}.hs-text small{font-size:11px;color:#3a4a40}.hs-rec{font-size:12px}
+aside{top:76px;bottom:calc(var(--hist-h,0px) + 10px);max-height:none}#panel{max-height:none}.workspace-tools{z-index:1001}
+#diffPick{max-height:calc(100vh - var(--hist-h,0px) - var(--dock-h,0px) - 40px);overflow:auto;font-size:13px}
+@media(max-height:760px){header p{display:none}header{top:12px}header h1{font-size:24px;margin:0}#comparisonControls{top:62px;padding:8px 12px}}
+@media(max-height:640px){#walkPad small{display:none}#walkPad{bottom:calc(var(--hist-h,0px) + 8px)}footer{display:none}}
+@media(max-width:1000px){#walkPad small{display:none}footer{display:none}#comparisonDock{width:calc(100vw - 150px);left:auto;right:10px;transform:none;max-width:none}#comparisonDock.collapsed{width:auto;max-width:calc(100vw - 150px)}#diffPick{left:auto;right:10px;transform:none}.hs-head{width:96px}}

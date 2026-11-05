@@ -54,7 +54,7 @@ export const activeOption=s=>!(s.removed_beam_ids?.length)&&s.strategy!=='clear_
 export function stockStatus(s){
   const fit=s.comparability?.stock_fit;
   if(!fit)return {fits:null,text:'Stock length fit unknown'};
-  return {fits:fit.feasible,text:fit.feasible?'Fits original stock lengths':`${fit.longer_needed} members exceed original stock · short ${fit.shortfall_m.toFixed(1)} m`};
+  return {fits:fit.feasible,text:fit.feasible?'Fits original stock lengths':`${fit.longer_needed} members exceed the stock by more than 10 mm · short ${fit.shortfall_m.toFixed(2)} m`};
 }
 export function compareFacts(data,a,b,{valuesA=a.shade_grid?.cell_mean,valuesB=b.shade_grid?.cell_mean,region=null,zone=null,tileBox=null}={}) {
   const A=geometryFacts(data,a),B=geometryFacts(data,b),changes=memberChanges(data,a,b),shade=shadeDifference(a.shade_grid,b.shade_grid,valuesA,valuesB,region);
@@ -87,7 +87,7 @@ export function differenceNote(f) {
   const members = !ch.changed.length ? 'No member changes.'
     : rigid ? `Every member moved as one frame; ${ch.resized.length} changed size.`
     : `${ch.changed.length} of ${total} members changed (1 mm tolerance); ${ch.same.length} unchanged, drawn faint.`;
-  const ground = f.shade.a === null ? 'No light data for this date / time.' : `${f.tileScope?`In ${f.tileScope}`:'On the whole ground'}: ${f.shade.gain} cells gain shade (teal), ${f.shade.loss} lose it (amber); unchanged cells are hidden.`;
+  const ground = f.shade.a === null ? 'No light data for this date / time.' : `${f.tileScope?`In ${f.tileScope}`:'On the whole ground'}, 25 cm map: ${f.shade.gain} cells gain shade (teal), ${f.shade.loss} lose it (amber); unchanged cells are hidden.`;
   return `${members} ${ground}`;
 }
 // Three levels of decision, each with its own question and its own numbers.
@@ -104,7 +104,7 @@ export function memberNote(f,perMember,ids){
   const size=a&&b&&(a.width!==b.width||a.height!==b.height)?`${mm(b)} → ${mm(a)}`:a?`${mm(a)}, ${a.length.toFixed(2)} m`:'not in this option';
   const list=perMember?.[id]||[],joints=list.length?`${list.length} joints touch it (with ${[...new Set(list.map(j=>j.with))].join(', ')}); re-notching them is not computed.`:'No joints recorded.';
   const tiles=f.shade.tiles.filter(t=>Math.abs(t.delta)>.001);
-  let cell='No ground cell changes.';if(!f.changes.changed.includes(id))cell='This member is the same in both options; click it again to go back.';else if(tiles.length){const t=tiles.reduce((p,q)=>Math.abs(q.delta)>Math.abs(p.delta)?q:p);cell=`${tiles.length} ground cells change; the largest goes from ${Math.round(t.b*100)}% to ${Math.round(t.a*100)}% of the hours in shade.`;}
+  let cell='No ground cell changes.';if(!f.changes.changed.includes(id))cell='This member is the same in both options; click it again to go back.';else if(tiles.length){const t=tiles.reduce((p,q)=>Math.abs(q.delta)>Math.abs(p.delta)?q:p);cell=`${tiles.length} ground cells (25 cm map) change; the largest goes from ${Math.round(t.b*100)}% to ${Math.round(t.a*100)}% of the hours in shade.`;}
   return `Member ${id}: ${size}. ${joints} ${cell}`;
 }
 // The comparison as a table for a saved figure. Each shade row names its scope, so two correct numbers are not read as a contradiction.
